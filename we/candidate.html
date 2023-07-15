@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+     }
+     body{
+        margin:0px;
+        overflow-x:hidden;
+     }
+     .full-page{
+        width:100%;
+     }
+     .head-top{
+        width:100%;
+        background-color:#5A19AE;
+        height:40px;
+     }
+     .header-con{
+        padding-left:8%;
+        padding-top:5px;
+     }
+     .head-text{
+        font-size:25px;
+        font-family:Lilita One;
+        color:white;
+     }
+     .img-con{
+        height:320px;
+        width:100%;
+     }
+     .img{
+        height:100%;
+        width:100%;
+        background-image:url("/Boy.png");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+     }
+     .text-con{
+        width:100%;
+        margin-top:3%;
+     }
+     .half-page{
+        width:100%;
+        padding-left:5%;
+        margin-top:6%;
+        padding-right:5%;
+     }
+     .text-field{
+        width:100%;
+        margin-top:17px;
+     }
+     .text-content{
+        width:100%;
+        margin-top:5%;
+        padding-left:5%;
+     }
+     .top-text{
+        font-size:24px;
+        font-weight:600;
+        font-family:Inter;
+     }
+     .top-name{
+        color: #424242;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+     }
+     .content{
+        width:100%;
+     }
+     .text-area-content{
+        width:100%;
+     }
+     .input-text{
+        height:40px;
+        width:100%;
+        margin-top:5px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+     }
+     .drop-down{
+        width:100%;
+        height:40px;
+        margin-top:5px;
+        border-radius:10px;
+        padding-left:10px;
+        font-size:12px;
+     }
+     .text-area{
+        width:100%;
+        margin-top:5px;
+        border-radius:10px;
+        resize:none;
+     }
+     .drop-down-con{
+        width:100%;
+     }
+     .file-con{
+        height:20px;
+     }
+     .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top:5px;
+      }
+      input[type="file"] {
+        position: absolute;
+        z-index: -1;
+        top: 10px;
+        left: 32px;
+        color: #b8b8b8;
+      }
+      .button-con {
+        position: relative;
+      }
+      .icon-con{
+        height:15px;
+        width:30px;
+        position:absolute;
+        margin-top:12px;
+        right:10px;
+        background-image:url("/icon _logout_.svg");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+      }
+      .button {
+        height:40px;
+        width:120px;
+        display: inline-block;
+        padding: 10px 13px;
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: white;
+        font-size: 15px;
+        color: black;
+        border-style:solid;
+        border-width:1px;
+        border-color:#7e7a7a;
+        font-family:Inter;
+      }
+      .info-message{
+        width: 60%;
+        font-size: 12px;
+        font-family: 'Inter';
+        margin-top: 3px;
+        color:#424242;
+      }
+      .buttonx{
+        height: 30px;
+        width: 100px;
+        background-color: #5A19AE;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 5%;
+        font-size: 14px;
+        color: white;
+        margin-bottom: 5%;
+      }
+      input:focus{
+        outline: none !important;
+        border-color: #5A19AE;
+         box-shadow: 0 0 3px #a068e7;
+      }
+      text-area-con:focus{
+        outline: none !important;
+        border-color: #5A19AE;
+         box-shadow: 0 0 3px #a068e7;
+      }
+      @media only screen and (min-width:600px){
+        .head-top{
+            height:55px;
+        }
+        .header-con{
+            padding-top:1%;
+        }
+        .head-text{
+            font-size:30px;
+        }
+        .img-con{
+            height:230px;
+        }
+        .img{
+            background-image:url("/candidate tab.jpg");
+        }
+        .half-page{
+            width:100%;
+            padding-left:6%;
+            margin-top:2%;
+        }
+        .text-content{
+            width:100%;
+            padding-left:5%;
+            margin-top:2%;
+        }
+        .double-text{
+            width:100%;
+        }
+        .text-field{
+            width:32%;
+            display:inline-block;
+            padding-right:1%;
+            margin-top:10px;
+        }
+        .drop-down-con{
+            width:32%;
+            display:inline-block;
+            padding-right:1%;
+        }
+        .input-text{
+            height:35px;
+        }
+        .drop-down{
+            height:35px;
+        }
+        .text-area-con{
+            padding-right:3%;
+        }
+      }
+
+
+      @media only screen and (min-width:900px){
+        .head-top{
+            height:55px;
+        }
+        .header-con{
+            padding-top:1%;
+        }
+        .head-text{
+            font-size:30px;
+        }
+        .img-con{
+            height:230px;
+        }
+        .img{
+            background-image:url("/Candidate.png");
+        }
+        .text-content{
+            width:100%;
+            padding-left:13%;
+            margin-top:2%;
+        }
+        .half-page{
+            width:100%;
+            padding-left:13%;
+            margin-top:2%;
+        }
+        .double-text{
+            width:100%;
+        }
+        .text-field{
+            width:300px;
+            display:inline-block;
+            padding-right:3%;
+            margin-top:7px;
+        }
+        .drop-down-con{
+            width:300px;
+            display:inline-block;
+            padding-right:3%;
+        }
+        .text-area-con{
+            padding-right:11%;
+        }
+        .buttonx{
+            height:41px;
+            width:125px;
+            font-size:15px;
+            margin-top:3%;
+        }
+      }
+
+</style>
+<body>
+    <div class="full-page">
+        <div class="head-top">
+            <div class="header-con">
+                <div class="head-text">
+                    We
+                </div>
+            </div>
+        </div>
+        <div class="img-con">
+            <div class="img"></div>
+        </div>
+        <div class="text-content">
+            <div class="top-text">Candidate</div>
+        </div>
+        <div class="half-page">
+            <div class="double-text">
+                <div class="text-field">
+            <div class="text-con">
+                <div class="top-name">First Name</div>
+            </div>
+            <div class="content">
+                <input class="input-text" type="text">
+            </div>
+        </div>
+        <div class="text-field">
+            <div class="text-con">
+                <div class="top-name">Last Name</div>
+            </div>
+            <div class="content">
+                <input class="input-text" type="text">
+            </div>
+        </div>
+            </div>
+        <div class="text-field">
+            <div class="text-con">
+                <div class="top-name">Job type</div>
+            </div>
+            <div class="content">
+                <input class="input-text" type="text">
+            </div>
+        </div>
+        <div class="drop-down-con">
+            <div class="text-con">
+                <div class="top-name">Industry</div>
+            </div>
+            <div class="content">
+                <select name="we" class="drop-down">
+                    <option>Accountant</option>
+                    <option>Data Entry Operator</option>
+                    <option>Computer Operator</option>
+                </select>
+            </div>
+        </div>
+        <div class="drop-down-con">
+            <div class="text-con">
+                <div class="top-name">Experience</div>
+            </div>
+           <div class="content">
+                <select name="we" class="drop-down">
+                    <option>0-1 years</option>
+                    <option>1-5 years</option>
+                    <option>5-10 years</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-field">
+           <div class="text-con">
+               <div class="top-name">Department</div>
+           </div>
+            <div class="content">
+                <input class="input-text" type="text">
+            </div>
+        </div>
+        <div class="drop-down-con">
+            <div class="text-con">
+                <div class="top-name">Degree</div>
+            </div>
+            <div class="content">
+                <select name="we" class="drop-down">
+                    <option>Diploma</option>
+                    <option>UG</option>
+                    <option>PG</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-field">
+            <div class="text-con">
+                <div class="top-name">Completed Year</div>
+            </div>
+            <div class="content">
+                <input class="input-text" type="text">
+            </div>
+        </div>
+        <div class="text-area-con">
+            <div class="text-con">
+                <div class="top-name">Skills</div>
+            </div>
+            <div class="text-area-content">
+                <textarea cols="5" rows="5" class="text-area"></textarea>
+            </div>
+        </div>
+        <div class="text-area-con">
+            <div class="text-con">
+                <div class="top-name">Address</div>
+            </div>
+            <div class="text-area-content">
+                <textarea cols="5" rows="5" class="text-area"></textarea>
+            </div>
+        </div>
+
+        <div class="text-field">
+            <div class="text-con">
+                <div class="top-name">Mobile No</div>
+            </div>
+            <div class="content">
+                <input class="input-text" type="text">
+            </div>
+        </div>
+        <div class="text-field">
+            <div class="text-con">
+                <div class="top-name">Email ID</div>
+            </div>
+            <div class="content">
+                <input class="input-text" type="text">
+            </div>
+        </div>
+
+        <div class="text-con">
+            <div class="top-name">Resume</div>
+        </div>
+        <div class="content">
+            <div class="container">
+            <div class="button-con">
+                <div class="icon-con"></div>
+                <label class="button" for="upload">Upload</label>
+                <input id="upload" type="file">
+            </div>
+        </div>
+        </div>
+        <div class="info-message">
+            Please ensure the file size is less than 2MB
+            and file type is doc, docx, rtf or pdf.
+        </div>
+        <input class="buttonx" type="button" value="Submit">
+        </div>
+    </div>
+</body>
+</html>

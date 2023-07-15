@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"></head>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0px;
+        overflow-x:hidden;
+    }
+    .page-container{
+        width:100%;
+    }
+    .head-top{
+        width:100%;
+        height:40px;
+        background-color:#5A19AE;
+    }
+    .header-con{
+        width:100%;
+        padding-left:8%;
+        padding-top:5px;
+    }
+    .header-text{
+        font-size:25px;
+        font-family:Lilita One;
+        color:white;
+    }
+    .img-con{
+        width:100%;
+        height:320px;
+    }
+    .img{
+        height:100%;
+        width:100%;
+        background-image:url("/employer.png");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+     }
+
+    .top-text-con{
+        width:100%;
+        padding-left:5%;
+        padding-top:4%;
+    }
+    .top-text{
+        font-size:24px;
+        font-weight:600;
+        font-family:Inter;
+    }
+    .half-page{
+        width:100%;
+        padding-left:5%;
+        padding-right:5%;
+        padding-top:2%;
+    }
+    .text-field{
+        width:100%;
+        padding-top:5%;
+
+    }
+    .top-name{
+        color: #424242;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .input-text{
+        height:40px;
+        width:100%;
+        margin-top:5px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 0.5px;
+    }
+    .drop-down-con{
+        width:100%;
+        padding-top:5%;
+    }
+    .drop-down{
+        width:100%;
+        height:40px;
+        margin-top:5px;
+        border-radius:10px;
+        padding-left:10px;
+        font-size:12px;
+    }
+    .text-area-con{
+        width:100%;
+        padding-top:5%;
+    }
+    .text-area{
+        width:100%;
+        margin-top:5px;
+        border-radius:10px;
+        resize:none;
+    }
+    .button{
+        height: 30px;
+        width: 100px;
+        background-color: #5A19AE;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 5%;
+        font-size: 14px;
+        color: white;
+        margin-bottom: 5%;
+      }
+      input:focus{
+        outline: none !important;
+        border-color: #5A19AE;
+         box-shadow: 0 0 3px #a068e7;
+      }
+      @media only screen and (min-width:600px){
+        .head-top{
+           height:55px;
+        }
+        .header-con{
+            padding-top:1%;
+        }
+        .header-text{
+            font-size:30px;
+        }
+        .img-con{
+            height:230px;
+        }
+        .img{
+            background-image:url("/employer tab.jpg");
+        }
+        .half-page{
+            width:100%;
+            padding-left:6%;
+            margin-top:0;
+            padding-top:0;
+        }
+        .text-field{
+            width:32%;
+            display:inline-block;
+            padding-right:1%;
+            margin-top:10px;
+            padding-top:0;
+        }
+        .drop-down-con{
+            width:32%;
+            display:inline-block;
+            padding-right:1%;
+        }
+        .input-text{
+            height:35px;
+        }
+        .drop-down{
+            height:35px;
+        }
+        .text-area-con{
+            padding-right:3%;
+            padding-top:2%;
+        }
+        .button{
+            display: inherit;
+        }
+      }
+      @media only screen and (min-width:900px){
+        .head-top{
+            height:55px;
+        }
+        .header-con{
+            padding-top:1%;
+        }
+        .head-text{
+            font-size:30px;
+        }
+        .img-con{
+            height:230px;
+        }
+        .img{
+            background-image:url("/Employer desktop.png");
+        }
+        .top-text-con{
+            padding-left:13%;
+            padding-top:2%;
+        }
+        .half-page{
+            width:100%;
+            padding-left:13%;
+            margin-top:0;
+        }
+        .text-field{
+            width:300px;
+            display:inline-block;
+            padding-right:3%;
+            padding-top:7px;
+        }
+        .drop-down-con{
+            width:300px;
+            display:inline-block;
+            padding-right:3%;
+            padding-top:3%;
+        }
+        .text-area-con{
+            padding-right:11%;
+        }
+        .button{
+            height:40px;
+            width:120px;
+            font-size:16px;
+        }
+      }
+</style>
+<body>
+    <div class="page-container">
+        <div class="head-top">
+            <div class="header-con">
+                <div class="header-text">We</div>
+            </div>
+        </div>
+        <div class="img-con">
+            <div class="img"></div>
+        </div>
+        <div class="top-text-con">
+            <div class="top-text">Employer</div>
+        </div>
+        <div class="half-page">
+            <div class="text-field">
+                <div class="top-name">Company Name
+                </div>
+                <input class="input-text" type="text">
+            </div>
+            <div class="text-field">
+                <div class="top-name">GST or Pan Number
+                </div>
+                <input class="input-text" type="text">
+            </div>
+             <div class="drop-down-con">
+                <div class="top-name">Industry Type</div>
+                <select name="we" class="drop-down">
+                    <option>Realestate</option>
+                    <option>construction</option>
+                </select>
+            </div>
+            <div class="text-area-con">
+                <div class="top-name">Address</div>
+                <textarea cols="5" rows="5" class="text-area"></textarea>
+            </div>
+            <div class="text-field">
+                <div class="top-name">Telephone Number
+                </div>
+                <input class="input-text" type="text">
+            </div>
+            <div class="text-field">
+                <div class="top-name">Email Id
+                </div>
+                <input class="input-text" type="text">
+            </div>
+            <input class="button" type="button" value="Submit">
+        </div>
+    </div>
+</body>
+</html>
