@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5cd447ac-c224-43ba-ac45-1c9a9b26e902" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../SSale/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSale/sale_home/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSale/sale_home/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U&amp;F app/login/templates/login page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U&amp;F app/login/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U&amp;F app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U&amp;F app/uiwq/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U&amp;F project/U_F_login/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U&amp;F project/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../djangoproject/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning/bowl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning/button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning/food bowl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning/food design pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../learning2/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandas/WHO-COVID-19-global-data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandas/art_coverage_by_country_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pandas/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../share_me/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../share_me/openpage/templates/openpage_style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../share_me/openpage/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../u&amp;f-web/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../u&amp;f-web/product/templates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../u&amp;f-web/product/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../u&amp;f-web/product/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/Uuk Design Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/attendance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/attendance2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/design pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/design pic2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/pic10.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/pic2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/sample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uukdesign/uuk design pic.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2NHIIjayaWRw2e9otl1siJ6fDFB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5cd447ac-c224-43ba-ac45-1c9a9b26e902" name="Changes" comment="" />
+      <created>1679314502999</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679314502999</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
