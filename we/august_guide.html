@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<style>
+     *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0px;
+        overflow-x:hidden;
+    }
+    .container{
+        width:100%;
+        height:600px;
+        background-image:url("/august bg.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        padding-top:30px;
+    }
+    .logo-con{
+        width:120px;
+        height:80px;
+        margin-left:30px;
+    }
+    .logo{
+        width:100%;
+        height:100%;
+        background-image:url("/uuk logo.png");
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .center-img-con{
+        width:300px;
+        height:200px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 60px;
+    }
+    .center-img{
+        width:100%;
+        height:100%;
+        background-image: url("/myth ph.png");
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .date-con{
+        font-size:24px;
+        font-family:Inter;
+        font-weight:400;
+        margin-top:10px;
+        text-align:center;
+        color: white;
+    }
+    .download-btn-con{
+        width:125px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:50px;
+    }
+    .download-btn{
+        width: 125px;
+        height: 35px;
+        background-color:white;
+        text-align: center;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: bold;
+        border-radius: 20px;
+        color: black;
+        display: block;
+        padding-top: 8px;
+    }
+    .download-btn:hover{
+        background-color: #FBB040;
+    }
+
+    @media screen and (min-width:600px){
+        .container{
+            height:700px;
+            background-image: url("/august bg tab.png");
+        }
+        .center-img-con{
+            width:500px;
+            height:300px;
+        }
+        .center-img{
+            background-image:url("/myth tab.png");
+        }
+    }
+
+    @media screen and (min-width:900px){
+        .container{
+            height:100vh;
+            background-image:url("/august bg desktop.png");
+        }
+        .logo-con{
+            margin-left:10%;
+        }
+        .center-img-con{
+            margin-top: 0px;
+        }
+        .center-img{
+            background-image:url("/myth desktop.png");
+        }
+    }
+</style>
+<body>
+<div class="container">
+    <div class="logo-con">
+        <div class="logo"></div>
+    </div>
+    <div class="center-img-con">
+        <div class="center-img"></div>
+    </div>
+    <div class="date-con">August 2023</div>
+    <div class="download-btn-con">
+        <a class="download-btn" href="" style="text-decoration:none;">Download</a>
+    </div>
+</div>
+
+</body>
+</html>

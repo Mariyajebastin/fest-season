@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0px;
+        overflow-x:hidden;
+<!--        overflow-y:hidden;-->
+    }
+    .page-container{
+        width:100%;
+    }
+    .down-image{
+        display:none;
+        position: absolute;
+        bottom: 0;
+    }
+    .left-page{
+        width:100%;
+        height:380px;
+        float:left;
+    }
+    .image-container{
+        height: 350px;
+        width: 400px;
+        margin-top: 10%;
+        margin-left: 10%;
+        background-image:url("/Group.png");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    .right-page{
+        height:380px;
+        width:100vw;
+        float:left;
+<!--        padding-left:8%;-->
+    }
+    .text-container{
+        height:230px;
+        width:80vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .textx{
+        font-size: 45px;
+        font-family: Lato;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texty{
+        font-size: 25px;
+        font-family: Lato;
+        text-align: center;
+        margin-top: 20px;
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .button{
+        height: 36px;
+        width: 138px;
+        background-color: #000000;
+        color: white;
+        font-weight: bold;
+        border-style: none;
+        border-radius: 15px;
+        margin-left: 30%;
+        margin-top: 30px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 7px;
+        font-family:Lato;
+    }
+    .button:hover{
+        background-color: #1E5DC2;
+    }
+    .right-corner-image{
+        height:210px;
+        width:218px;
+        float:right;
+        background-image:url("/colored blurry spot.png");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+    @media screen and (min-width:600px){
+      .page-container{
+        width:100%;
+      }
+      .left-page{
+        width:100%;
+        height:380px;
+        float:left;
+      }
+      .image-container{
+        height: 370px;
+        width: 440px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right:auto;
+        background-image:url("/Group.png");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+      }
+      .text-container{
+        height:170px;
+        width:80vw;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .textx{
+        font-size: 45px;
+        font-family: Lato;
+        font-weight: bold;
+        text-align: center;
+      }
+      .texty{
+        font-size: 23px;
+        font-family: Lato;
+        text-align: center;
+        margin-top: 15px;
+        width: 300px;
+        margin-left: auto;
+        margin-right:auto;
+      }
+      .button{
+            height: 36px;
+            width: 138px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            padding-top: 8px;
+            margin-left:auto;
+            margin-right:auto;
+            font-family:Lato;
+            margin-top:20px;
+        }
+    }
+    @media screen and (min-width:900px){
+        .page-container{
+            width:100%;
+            position:relative;
+            height:100vh;
+        }
+        .down-image{
+            display:block;
+            position: absolute;
+            bottom: 0;
+            left: 225px;
+        }
+        .left-page{
+            width:50%;
+            float:left;
+            height:100vh;
+        }
+        .image-container{
+            height: 478px;
+            width: 563px;
+            margin-top:4%;
+            margin-left: 8%;
+            background-image:url("/Group.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-position:center;
+        }
+        .left-down-image{
+            height:125px;
+            width:200px;
+            margin-left:auto;
+            margin-right:auto;
+            background-image:url("/speech bubble.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-position:center;
+        }
+        .right-page{
+            width:50%;
+            height:100vh;
+            float:left;
+            padding-left:0px;
+            padding-top:calc( calc(100vh - 50vh) / 2 );
+            position:relative;
+        }
+        .text-container{
+            width:50vw;
+            height:40vh;
+            padding-top:calc( calc(42vh - 30vh) / 2 );
+            padding-left:calc( calc(50vw - 40vw) / 2 );
+        }
+        .center{
+            width:40vw;
+            height:30vh;
+
+        }
+        .textx{
+            font-size: 40px;
+            font-family: Lato;
+            font-weight: bold;
+            text-align: center;
+        }
+        .texty{
+            font-size: 22px;
+            font-family: Lato;
+            text-align: center;
+            text-align: center;
+            width: 60%;
+            margin-left: 20%;
+        }
+        .button{
+            height: 36px;
+            width: 138px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            padding-top: 8px;
+            font-family:Lato;
+        }
+        .right-corner-image{
+            height:210px;
+            width:218px;
+            background-image:url("/colored blurry spot.png");
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-position:center;
+            position: absolute;
+            right:0;
+            bottom:0;
+        }
+    }
+</style>
+<body>
+    <div class="page-container">
+        <img src="speech bubble.png" class="down-image">
+        <div class="left-page">
+            <div class="image-container">
+                <div class="left-image"></div>
+            </div>
+        </div>
+        <div class="right-page">
+            <div class="text-container">
+                <div class="center">
+                  <div class="textx">
+                    Tips to Learn Coding Faster
+                </div>
+                <div class="texty">
+                    Learning tips Guide July 2023
+                </div>
+                 <a class="button" type="button" href="client-data">Download</a>
+                </div>
+            </div>
+            <div class="right-corner-image">
+                <div class="corner-image"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

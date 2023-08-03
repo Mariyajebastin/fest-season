@@ -28,7 +28,6 @@
         width:100%;
         padding-left:8%;
         padding-top:1%;
-
     }
     .header-text{
         font-size:25px;
@@ -68,7 +67,7 @@
     }
     .drop-down-con{
         width:100%;
-        padding-top:5%;
+        padding-top:3%;
     }
     .top-name{
         font-size:13px;
@@ -93,7 +92,100 @@
         border-style:solid;
         border-width:0.5px;
     }
-
+    .text-area-con{
+        width:100%;
+        padding-top:3%;
+    }
+    .text-area{
+        width:100%;
+        margin-top:5px;
+        border-radius:10px;
+        resize:none;
+    }
+    .button{
+        height: 30px;
+        width: 100px;
+        background-color: #5A19AE;
+        border-style: none;
+        border-radius: 10px;
+        margin-top: 5%;
+        font-size: 14px;
+        color: white;
+        margin-bottom: 5%;
+      }
+      input:focus{
+        outline: none !important;
+        border-color: #5A19AE;
+         box-shadow: 0 0 3px #a068e7;
+      }
+      @media only screen and (min-width:600px){
+        .top-con{
+            height:55px;
+        }
+        .header-top{
+            padding-left:8%;
+            padding-top:1.5%;
+        }
+        .header-text{
+            font-size:30px;
+        }
+        .icon-con{
+            height: 130px;
+        }
+        .middle-page{
+            padding-right:15%;
+            padding-left:15%;
+        }
+        .drop-down-con{
+            width:49%;
+            display:inline-block;
+            padding-right:1%;
+        }
+        .text-field{
+            width:49%;
+            display:inline-block;
+            padding-right:1%;
+            margin-top:10px;
+            padding-top:0;
+        }
+        .button{
+            display: inherit;
+        }
+      }
+      @media only screen and (min-width:900px){
+        .head-top{
+            height:55px;
+        }
+        .header-top{
+            padding-left:8%;
+            padding-top:0.8%;
+        }
+        .icon-con{
+            height:110px;
+            padding-top:3%;
+            padding-bottom:1%
+        }
+        .double{
+            width:100%;
+        }
+        .drop-down-con{
+            width:40%;
+        }
+         .text-field{
+            width:40%;
+         }
+         .text-area-con{
+            width:80%;
+         }
+         .middle-center{
+            padding-left:17%;
+         }
+        .button{
+            height:40px;
+            width:120px;
+            font-size:16px;
+        }
+      }
 </style>
 <body>
     <div class="page-con">
@@ -109,24 +201,50 @@
             <div class="top-text">Create Jobs</div>
         </div>
         <div class="middle-page">
-            <div class="drop-down-con">
-                <div class="top-name">Industry Type</div>
+            <div class="middle-center">
+                <div class="double">
+                 <div class="drop-down-con">
+                    <div class="top-name">Industry Type</div>
+                    <select name="we" class="drop-down">
+                    <option>Realestate</option>
+                    <option>construction</option>
+                    </select>
+                 </div>
+                <div class="text-field">
+                    <div class="top-name">Job Title</div>
+                    <input class="input-con" type="text">
+                </div>
+                </div>
+                <div class="drop-down-con">
+                    <div class="top-name">Salary per Annum</div>
+                    <select name="we" class="drop-down">
+                        <option>Dollar</option>
+                        <option>Euro</option>
+                    </select>
+                </div>
+                <div class="text-field">
+                    <div class="top-name">Years of experience</div>
+                    <input class="input-con" type="text">
+                </div>
+                <div class="text-area-con">
+                    <div class="top-name">Area Multi Select</div>
+                    <textarea cols="5" rows="5" class="text-area"></textarea>
+                </div>
+                <div class="text-field">
+                    <div class="top-name">Posting Location</div>
+                    <input class="input-con" type="text">
+                </div>
+                <div class="text-area-con">
+                    <div class="top-name">Job Description</div>
+                    <textarea cols="5" rows="5" class="text-area"></textarea>
+                </div>
+                <div class="text-field">
+                    <div class="top-name">Work Place</div>
+                    <input class="input-con" type="text">
+                </div>
+                <input class="button" type="button" value="Submit">
             </div>
-             <select name="we" class="drop-down">
-                <option>Realestate</option>
-                <option>construction</option>
-             </select>
-            <div class="text-field">
-                <div class="top-name">Job Title</div>
-                <input class="input-con" type="text">
-            </div>
-            <div class="drop-down-con">
-                <div class="top-name">Salary per Annum</div>
-            </div>
-                <select name="we" class="drop-down">
-                    <option>Dollar</option>
-                    <option>Euro</option>
-                </select>
+
         </div>
     </div>
 </body>

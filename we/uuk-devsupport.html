@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0;
+        overflow-x:hidden;
+    }
+    .full-con{
+        width:100%;
+    }
+    .head-con{
+        width:100%;
+        height:100vh;
+    }
+    .head-top{
+        width:100%;
+        height:55px;
+        background-color:black;
+    }
+    .header-center{
+        width:90vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .header-left{
+        height: inherit;
+        width: 25vw;
+        float: left;
+        padding-top:1%;
+    }
+    .header-right{
+        width:65vw;
+    }
+    .header-txt{
+        font-size:25px;
+        font-family:Clash Display;
+        color:white;
+        font-weight:bold;
+    }
+    .text-table{
+        float:right;
+    }
+    .text-tag{
+        font-size:15px;
+        font-family:Clash Display;
+        color:white;
+        width:85px;
+        text-align:center;
+        display:block;
+        float:left;
+        padding-top:1.5%;
+    }
+    .txt-tag{
+        font-size:15px;
+        font-family:Clash Display;
+        color:white;
+        width:115px;
+        display:block;
+        float:left;
+        padding-top:1.5%;
+    }
+    .bg-con{
+        width:100%;
+        height:91vh;
+    }
+    .bg-img{
+        width:100%;
+        height:100%;
+        background-image:url("/Rectangle.png");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    .left-con{
+        width:50%;
+        height:100%;
+        float:left;
+        padding-top:13%;
+    }
+    .right-con{
+        float:left;
+        padding-top:7%;
+    }
+    .center{
+        width:75%;
+        height:50%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .center-txt{
+        font-size:60px;
+        font-family:Clash Display;
+        font-weight:bold;
+        color:white;
+    }
+    .button{
+        height:34px;
+        width:110px;
+        font-size:16px;
+        background-color:white;
+        border-radius:15px;
+        border-style:solid;
+        border-width:1.5px;
+        margin-top:13px;
+    }
+    .img-con{
+        height:73%;
+        width:75%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .img{
+        height:100%;
+        width:100%;
+        background-image:url("/dev.png");
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .middle-page{
+        width:100%;
+        height:100vh;
+    }
+    .middle-txt{
+        font-size:30px;
+        font-family:Clash Display;
+        font-weight:bold;
+        text-align:center;
+        padding-top:5%;
+    }
+    .middle-left{
+        width:50%;
+        float:left;
+        height:84vh;
+        position:relative;
+    }
+    .right{
+        float:left;
+    }
+    .left-img-con{
+        width:26%;
+        height:55vh;
+        margin-top:7%;
+        position:absolute;
+    }
+    .left-img{
+        height:100%;
+        width:100%;
+        background-image:url("/Group.png");
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .center-img-con{
+        width:50%;
+        height:45vh;
+        margin-top:15%;
+        margin-left:auto;
+        margin-right:14%;
+    }
+    .center-img{
+        height:100%;
+        width:100%;
+        background-image:url("/Asset.png");
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .right-img-con{
+        width:31%;
+        height:55vh;
+        margin-top:7%;
+        float:right;
+    }
+    .right-img{
+        height:100%;
+        width:100%;
+        background-image:url("/devside.png");
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .a-tag-con{
+        width:55%;
+        height:45vh;
+        margin-top:18%;
+        margin-left:5%;
+    }
+    .buttonx{
+        height: 45px;
+        width: 255px;
+        border-style: solid;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        display:block;
+        padding-top:10px;
+        color:black;
+        font-family:Inter;
+        margin-bottom:13px;
+    }
+    .down-page{
+        width:100%;
+        background-color:black;
+    }
+    .down-con{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        height:50vh;
+        padding-top:50px;
+    }
+    .left-sec{
+        width:30%;
+        height:80px;
+        display:inline-block;
+        float:left;
+    }
+    .down-text{
+        font-size:43px;
+        font-family:Clash Display;
+        font-weight:bold;
+        color:white;
+    }
+    .right-sec{
+        width:55%;
+        height:108px;
+        float:right;
+        position:relative;
+    }
+    .down-tag-con{
+        width:21%;
+        position:absolute;
+    }
+    .down-tag{
+        font-size:23px;
+        font-family:Clash Display;
+        color:white;
+        display:block;
+        font-weight:bold;
+        padding-bottom:23px;
+    }
+    .info-con{
+        width:30%;
+        height:80px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .icon-con{
+        width:30px;
+        height:0px;
+    }
+    .fa-phone{
+        color:white;
+        font-size:20px;
+        padding-top:5px;
+    }
+    .fa-envelope-o{
+        color:white;
+        padding-top:25px;
+    }
+    .fa-globe{
+        color:white;
+        padding-top:19px;
+    }
+    .info-txt{
+        font-size:13px;
+        font-family:Inter;
+        padding-left:28px;
+        color:white;
+        padding-bottom:20px;
+    }
+    .fb-con{
+        width:100px;
+        position:absolute;
+        right:4%;
+        bottom:3%;
+    }
+    .fb{
+        font-size:14px;
+        font-family:Inter;
+        font-weight:bold;
+        color:white;
+    }
+    .fa-facebook-square{
+        color:white;
+        font-size:17px;
+        padding-left:5px;
+    }
+</style>
+<body>
+    <div class="full-con">
+        <div class="head-con">
+            <div class="head-top">
+                <div class="header-center">
+                    <div class="header-left">
+                    <div class="header-txt">Codesolu</div>
+                    </div>
+                    <div class="header-left header-right">
+                         <div class="text-table">
+                            <a class="text-tag" href=""style="text-decoration: none;">Developers</a>
+                            <a class="text-tag" href=""style="text-decoration: none;">Bugs</a>
+                            <a class="txt-tag" href=""style="text-decoration: none;">Tech Support</a>
+                            <a class="text-tag" href=""style="text-decoration: none;">Guidelines</a>
+                            <a class="text-tag" href=""style="text-decoration: none;">Pricing</a>
+                            <a class="text-tag" href=""style="text-decoration: none;">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-con">
+                <div class="bg-img">
+                     <div class="left-con">
+                    <div class="center">
+                        <div class="center-txt">
+                            Get your coding error solutions
+                        </div>
+                        <input class="button" type="button" value="Register">
+                    </div>
+                </div>
+                <div class="left-con right-con">
+                    <div class="img-con">
+                        <div class="img"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-page">
+            <div class="middle-txt">Choose your service</div>
+            <div class="middle-left">
+                <div class="left-img-con">
+                    <div class="left-img"></div>
+                </div>
+                <div class="center-img-con">
+                    <div class="center-img"></div>
+                </div>
+            </div>
+            <div class="middle-left right">
+                <div class="right-img-con">
+                    <div class="right-img"></div>
+                </div>
+                <div class="a-tag-con">
+                    <a class="buttonx" href=""style="text-decoration: none;">Developers</a>
+                    <a class="buttonx" href=""style="text-decoration: none;">Bugs</a>
+                    <a class="buttonx" href=""style="text-decoration: none;">Tech Support</a>
+                    <a class="buttonx" href=""style="text-decoration: none;">Guidelines</a>
+                </div>
+            </div>
+        </div>
+        <div class="down-page">
+            <div class="down-con">
+                <div class="left-sec">
+                    <div class="down-text">
+                        Get solutions for your error in 1 hour.
+                    </div>
+                </div>
+                <div class="left-sec right-sec">
+                    <div class="down-tag-con">
+                         <a class="down-tag" href=""style="text-decoration: none;">Register</a>
+                         <a class="down-tag" href=""style="text-decoration: none;">Login</a>
+                    </div>
+                    <div class="info-con">
+                        <div class="icon-con">
+                            <i class="fa fa-phone"></i>
+                            <i class="fa fa-envelope-o"></i>
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="info-txt">
+                            Customer Service 24x7 1800 777 7777
+                        </div>
+                        <div class="info-txt">
+                            support@dev.com
+                        </div>
+                        <div class="info-txt">
+                            www.dev.com
+                        </div>
+                    </div>
+                    <div class="fb-con">
+                         <a class="fb" href=""style="text-decoration: none;">Follow us</a>
+                        <i class="fa fa-facebook-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
