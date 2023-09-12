@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <title>We</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+       box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .head-top{
+      width: 100%;
+      height:60px;
+      box-shadow: 2px 2px gainsboro;
+    }
+    .header-con{
+      width:100%;
+      padding-left: 5%;
+      padding-top: 3px;
+    }
+    .header-text{
+      font-size:35px;
+      font-family:Lexend;
+      color:#1400FF;
+      font-weight: 900;
+      display: inline-block;
+    }
+    .profile-con{
+      display: inline-block;
+      float:right;
+      padding-right: 5%;
+      padding-top: 2px;
+    }
+    .profile-name{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 400;
+      margin-right: 5px;
+      display: block;
+      float:left;
+      color:black;
+      padding-top: 15px;
+    }
+    .profile-icon{
+      width:25px;
+      height: 25px;
+      display: block;
+      float: left;
+      background-color: #D9D9D9;
+      margin-top: 10px;
+      border-radius: 15px;
+    }
+    .material-icons{
+      font-size: 15px;
+      padding:6px;
+    }
+    .emp-pe-con{
+      width:100%;
+      margin-bottom: 145px;
+    }
+    .emp-pe-center{
+      width:70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:20%;
+    }
+    .emp-pe-txt{
+      font-size: 20px;
+      font-family: Lexend;
+      font-weight: 700;
+      color:#1400FF;
+    }
+    .emp-db-con{
+      height: 210px;
+      color:white;
+      margin-top: 20px;
+    }
+    .emp-db{
+      width: 47%;
+      height: 45%;
+      background-color: black;
+      float: left;
+      margin-left: 2%;
+      margin-right: 0%;
+      margin-top: 7px;
+    }
+    .emp-db-tag{
+      font-size: 16px;
+      font-family: Lexend;
+      font-weight: 400;
+      color: white;
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+    }
+    .emp-icon{
+      height: 21px;
+      width: 21px;
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
+      margin-top: 25px;
+    }
+    .job-icon{
+      height: 21px;
+      width: 21px;
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
+      margin-top: 25px;
+    }
+    .candidate-icon{
+      height: 21px;
+      width: 21px;
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
+      margin-top: 25px;
+    }
+    .analytics-icon{
+      height: 21px;
+      width: 21px;
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
+      margin-top: 25px;
+    }
+    .footer-container{
+    width:100%;
+    margin-top: 50px;
+    background-color: #ECECEC;
+    /*height: 70vh;*/
+  }
+  .footer-center{
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top:25px;
+  }
+  .footer-con{
+    width:100%;
+  }
+  .footer-header-text-con{
+    width:10%;
+  }
+  .footer-header-text{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Lexend;
+    color:#1400FF;
+  }
+  .table{
+    width:31%;
+    padding-top: 15px;
+  }
+  .hd-txt{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .hd-txtx{
+    font-size: 18px;
+    font-family: Lexend;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .tag-con{
+    padding-top: 5px;
+  }
+  .tag-type{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 300;
+    color:black;
+    display: block;
+    line-height: 22px;
+  }
+  .tag-typex{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    display: block;
+  }
+  .tag-typey{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    padding-top:15px;
+  }
+  .tag-typey-con{
+    padding-top: 15px;
+  }
+  .app-con{
+    padding-top: 20px;
+    width: 200px;
+    padding-bottom: 30px;
+  }
+  .app{
+    font-size: 15px;
+    font-family: Lexend;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .link-apple{
+    color: black;
+  }
+  .fa-android{
+    font-size: 19px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .fa-apple{
+    font-size: 19px;
+    display: inline-block;
+  }
+   a i:hover {
+     transition: all 0.3s linear;
+  }
+   .fa-android:hover{
+     color:#a8e86f;
+     cursor: pointer;
+     transition: all 0.3s linear;
+   }
+   .fa-apple:hover{
+     color: gray;
+     cursor: pointer;
+     transition: all 0.3s linear;
+   }
+    @media only screen and (min-width:600px) {
+      .head-top {
+        height: 55px;
+      }
+      .header-con {
+        padding-top: 1%;
+        padding-left: 15%;
+      }
+      .profile-con{
+        padding-right: 16%;
+      }
+      .emp-pe-center{
+        margin-top:15%;
+      }
+      .footer-container{
+        display: inline-block;
+      }
+      .footer-con{
+        height: 240px;
+      }
+      .footer-center {
+        width: 70%;
+      }
+      .table{
+        width:27%;
+        padding-top: 0px;
+        display: block;
+        height: 100px;
+        float: left;
+      }
+      .hd-txt{
+        font-size: 13px;
+      }
+      .tag-type{
+        font-size: 13px;
+      }
+      .tag-typex{
+        font-size: 13px;
+      }
+      .tag-typey{
+        font-size: 13px;
+      }
+      .tablex{
+        width: 20%;
+        display: block;
+        float: left;
+        height: 100px;
+        padding-top: 10px;
+      }
+      .tabley{
+        width:32%;
+        display: block;
+        float: left;
+        height: 140px;
+      }
+      .tablez{
+        width:21%;
+        display: block;
+        float: left;
+      }
+    }
+    @media only screen and (min-width:900px) {
+      .head-top {
+        height: 55px;
+      }
+      .header-con {
+        padding-top: 0.5%;
+      }
+      .head-text {
+        font-size: 35px;
+      }
+      .emp-db{
+        width: 22%;
+      }
+      .emp-pe-txt{
+        text-align: center;
+      }
+      .footer-con{
+        height: 160px;
+      }
+      .footer-header-text-con{
+        margin-right: 15%;
+        display: block;
+        float: left;
+      }
+      .table{
+        width:18%;
+      }
+      .hd-txt{
+        font-size: 14px;
+      }
+      .tag-type{
+        font-size: 14px;
+      }
+      .tag-typex{
+        font-size: 14px;
+      }
+      .tag-typey{
+        font-size: 14px;
+      }
+      .tablex{
+        width:15%;
+      }
+      .tabley{
+        width:22%;
+        margin-left: 0;
+      }
+      .tablez{
+        width: 20%;
+      }
+      .app-con{
+        padding-top:0;
+        padding-bottom: 40px;
+      }
+    }
+
+</style>
+<body>
+    <div class="head-top">
+      <div class="header-con">
+        <a class="header-text" href="website" style="text-decoration: none;">we.</a>
+        <div class="profile-con">
+          <a class="profile-name" href="website/employer-profiledetails" style="text-decoration: none;">
+            UUK Softwares
+          </a>
+          <div class="profile-icon">
+            <i class="material-icons">domain</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="emp-pe-con">
+      <div class="emp-pe-center">
+        <div class="emp-pe-txt">Hi UUK Softwares</div>
+        <div class="emp-db-con">
+          <div class="emp-db">
+            <svg xmlns="http://www.w3.org/2000/svg" class="emp-icon" width="32" height="30" viewBox="0 0 32 30" fill="none">
+            <path d="M16.25 7.26522V0.931885H0.5V29.4319H32V7.26522H16.25ZM13.1 26.2652H3.65V23.0986H13.1V26.2652ZM13.1 19.9319H3.65V16.7652H13.1V19.9319ZM13.1 13.5986H3.65V10.4319H13.1V13.5986ZM13.1 7.26522H3.65V4.09855H13.1V7.26522ZM28.85 26.2652H16.25V10.4319H28.85V26.2652ZM25.7 13.5986H19.4V16.7652H25.7V13.5986ZM25.7 19.9319H19.4V23.0986H25.7V19.9319Z" fill="white"/>
+          </svg>
+            <a class="emp-db-tag" href="" style="text-decoration: none;">Employer</a>
+          </div>
+          <div class="emp-db">
+            <svg xmlns="http://www.w3.org/2000/svg" class="job-icon" width="40" height="39" viewBox="0 0 40 39" fill="none">
+              <g clip-path="url(#clip0_70_39)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.25 9.74988V6.49988H16.75V9.74988H23.25ZM6.99997 12.9999V30.8749H33V12.9999H6.99997ZM33 9.74988C34.8037 9.74988 36.25 11.1961 36.25 12.9999V30.8749C36.25 32.6786 34.8037 34.1249 33 34.1249H6.99997C5.19622 34.1249 3.74997 32.6786 3.74997 30.8749L3.76622 12.9999C3.76622 11.1961 5.19622 9.74988 6.99997 9.74988H13.5V6.49988C13.5 4.69613 14.9462 3.24988 16.75 3.24988H23.25C25.0537 3.24988 26.5 4.69613 26.5 6.49988V9.74988H33Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_70_39">
+                  <rect width="39" height="39" fill="white" transform="translate(0.5 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <a class="emp-db-tag" href="" style="text-decoration: none;">Job</a>
+          </div>
+          <div class="emp-db">
+            <svg xmlns="http://www.w3.org/2000/svg" class="candidate-icon" width="39" height="26" viewBox="0 0 39 26" fill="none">
+              <path d="M27.4773 15.0036C25.35 15.0036 22.035 15.6228 19.5 16.825C16.965 15.6046 13.65 15.0036 11.5227 15.0036C7.67591 15.0036 0 16.9707 0 20.9232V25.9321H39V20.9232C39 16.9707 31.3241 15.0036 27.4773 15.0036ZM20.3864 23.2H2.65909V20.9232C2.65909 19.9396 7.19727 17.7357 11.5227 17.7357C15.8482 17.7357 20.3864 19.9396 20.3864 20.9232V23.2ZM36.3409 23.2H23.0455V20.9232C23.0455 20.0853 22.6909 19.3568 22.1236 18.7011C23.6836 18.1546 25.5982 17.7357 27.4773 17.7357C31.8027 17.7357 36.3409 19.9396 36.3409 20.9232V23.2ZM11.5227 13.1821C14.9441 13.1821 17.7273 10.3225 17.7273 6.80713C17.7273 3.29177 14.9441 0.432129 11.5227 0.432129C8.10136 0.432129 5.31818 3.29177 5.31818 6.80713C5.31818 10.3225 8.10136 13.1821 11.5227 13.1821ZM11.5227 3.16427C13.4727 3.16427 15.0682 4.80356 15.0682 6.80713C15.0682 8.8107 13.4727 10.45 11.5227 10.45C9.57273 10.45 7.97727 8.8107 7.97727 6.80713C7.97727 4.80356 9.57273 3.16427 11.5227 3.16427ZM27.4773 13.1821C30.8986 13.1821 33.6818 10.3225 33.6818 6.80713C33.6818 3.29177 30.8986 0.432129 27.4773 0.432129C24.0559 0.432129 21.2727 3.29177 21.2727 6.80713C21.2727 10.3225 24.0559 13.1821 27.4773 13.1821ZM27.4773 3.16427C29.4273 3.16427 31.0227 4.80356 31.0227 6.80713C31.0227 8.8107 29.4273 10.45 27.4773 10.45C25.5273 10.45 23.9318 8.8107 23.9318 6.80713C23.9318 4.80356 25.5273 3.16427 27.4773 3.16427Z" fill="white"/>
+            </svg>
+            <a class="emp-db-tag" href="website/employer-candidate-applied" style="text-decoration: none;">Candidate</a>
+          </div>
+          <div class="emp-db">
+            <svg xmlns="http://www.w3.org/2000/svg" class="analytics-icon" width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <g clip-path="url(#clip0_70_42)">
+                <path d="M28.5 4.49988H7.5C5.835 4.49988 4.5 5.84988 4.5 7.49988V28.4999C4.5 30.1499 5.835 31.4999 7.5 31.4999H28.5C30.15 31.4999 31.5 30.1499 31.5 28.4999V7.49988C31.5 5.84988 30.165 4.49988 28.5 4.49988ZM28.5 28.4999H7.5V10.4999H28.5V28.4999ZM25.5 17.9999H10.5V14.9999H25.5V17.9999ZM19.5 23.9999H10.5V20.9999H19.5V23.9999Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_70_42">
+                  <rect width="36" height="36" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <a class="emp-db-tag" href="website/employer-candidate-applied" style="text-decoration: none;">Analytics</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-center">
+        <div class="footer-con">
+          <div class="footer-header-text-con">
+            <a class="footer-header-text" href="" style="text-decoration: none;">we.</a>
+          </div>
+          <div class="table">
+            <div class="hd-txtx">we</div>
+            <div class="tag-con">
+              <a class="tag-type" href="" style="text-decoration: none;">About / press</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Blog</a>
+            </div>
+          </div>
+          <div class="tablex">
+            <div class="tag-con">
+              <a class="tag-typex" href="" style="text-decoration: none;">Login</a>
+              <a class="tag-typex" href="" style="text-decoration: none;">Sign up</a>
+            </div>
+            <div class="tag-typey-con">
+              <a class="tag-typey" href="" style="text-decoration: none;">Employer</a>
+            </div>
+          </div>
+          <div class="tabley">
+            <div class="hd-txt">Information</div>
+            <div class="tag-con">
+              <a class="tag-type" href="" style="text-decoration: none;">My information</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Help / contact us</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Guidelines</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Terms of use</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Privacy / cookies</a>
+            </div>
+          </div>
+          <div class="tablez">
+            <div class="hd-txt">Work with us</div>
+            <div class="tag-con">
+              <a class="tag-type" href="" style="text-decoration: none;">Advertisers</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Careers</a>
+            </div>
+          </div>
+        </div>
+        <div class="app-con">
+          <div class="app">Download the app</div>
+          <a class="link-android">
+            <i class="fa fa-android"></i>
+          </a>
+          <a class="link-apple" href="" style="text-decoration: none;">
+            <i class="fa fa-apple"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

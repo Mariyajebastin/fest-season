@@ -1,0 +1,794 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <title>We</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .head-top{
+      width: 100%;
+      height:60px;
+      box-shadow: 2px 2px gainsboro;
+    }
+    .header-con{
+      width:100%;
+      padding-left: 5%;
+      padding-top: 3px;
+    }
+    .header-text{
+      font-size:35px;
+      font-family:Lexend;
+      color:#1400FF;
+      font-weight: 900;
+      display: inline-block;
+    }
+    .profile-con{
+      display: inline-block;
+      float:right;
+      padding-right: 5%;
+      padding-top: 2px;
+    }
+    .profile-name{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 400;
+      margin-right: 5px;
+      display: block;
+      float:left;
+      color:black;
+      padding-top: 15px;
+    }
+    .profile-icon{
+      width:25px;
+      height: 25px;
+      display: block;
+      float: left;
+      background-color: #D9D9D9;
+      margin-top: 10px;
+      border-radius: 15px;
+    }
+    .material-icons{
+      font-size: 15px;
+      padding:6px;
+    }
+    .emp-pe-ds-con{
+      width:100%;
+    }
+    .emp-pe-ds-center{
+      width:90%;
+      margin-right: auto;
+      margin-left:auto;
+      margin-top:40px;
+    }
+    .center-align{
+      display: inline-block;
+      width: 100%;
+    }
+    .dropdown-total-con{
+
+    }
+    .emp-pe-ds-dropdown-con{
+      width:90px;
+      height: 25px;
+      background-color: #D9D9D9;
+      display: block;
+      float: left;
+    }
+    .emp-pe-ds-dropdown{
+      position: relative;
+      display: inline-block;
+    }
+    .emp-icon-center{
+      width: 15px;
+      display: inline-block;
+      margin-left: 8px;
+      padding-top: 4px;
+    }
+    .emp-atag{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 400;
+      color:black;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    .drop-down-icon{
+      width: 25px;
+      height: 25px;
+      background-color: #1400FF;
+      display: block;
+      float: left;
+    }
+    .fa-angle-down{
+      font-size: 25px;
+      color:white;
+      margin-left: 4px;
+    }
+    .dropdown-content{
+      display: none;
+    }
+    .emp-pe-ds-dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .emp-icon{
+      height: 14px;
+      width: 15px;
+      float: left;
+      display: block;
+    }
+    .jobpost-icon{
+      height: 13px;
+      width: 15px;
+      margin-left: 5px;
+      margin-top: 5px;
+      float: left;
+      margin-right: 5px
+    }
+    .candidate-icon{
+      height: 14px;
+      width: 15px;
+      float: left;
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+    .analytics-icon{
+      height: 12px;
+      width: 15px;
+      float: left;
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+    .option-con{
+      width: 90px;
+      height: 25px;
+      background-color: #D9D9D9;
+      margin-top: 5px;
+      opacity: 0.5
+    }
+    .option-con:hover{
+      opacity: 1;
+    }
+    .emp-dp-pic-con{
+      height: 60px;
+      width: 60px;
+      margin-top: 55px;
+      border-radius: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .emp-dp-pic{
+      height: 100%;
+      width:100%;
+      background-image: url("{% static 'images/emp dp pic.png' %}");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .emp-cy-name{
+      font-size: 15px;
+      font-family: Lexend;
+      font-weight: 500;
+      margin-top: 5px;
+      text-align: center;
+    }
+    .text-fd-align{
+      margin-top: 30px;
+    }
+
+    .emp-smb-btn{
+      font-size: 14px;
+      font-family: Lexend;
+      font-weight: 400;
+      width:100px;
+      height: 30px;
+      background-color:black;
+      color:white;
+      text-align: center;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 5px;
+      margin-top:40px;
+    }
+    .text-field{
+      width:100%;
+      padding-top: 10px;
+    }
+    .top-name{
+      font-family: Lexend;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .input-text{
+      font-weight: 300;
+      height: 30px;
+      width: 100%;
+      margin-top: 5px;
+      border: 0.5px solid #000;
+      border-radius: 4px;
+      font-size: 13px;
+      font-family: Lexend;
+      padding-left: 10px;
+    }
+    .edit-icon{
+      display: inline-block;
+    }
+    .fa-pencil{
+      font-size: 11px;
+    }
+    .text-area-con{
+      width:100%;
+      padding-top: 10px;
+    }
+    .top-name{
+      color: #424242;
+      font-family: Inter;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .text-area{
+      width: 100%;
+      margin-top:5px;
+      resize:none;
+      font-size: 13px;
+      font-family: Lexend;
+      font-weight: 300;
+    }
+    .drop-down-con{
+      width:100%;
+      padding-top: 10px;
+    }
+    .top-name{
+      color: #424242;
+      font-family: Lexend;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .edit-icon{
+      display: inline-block;
+    }
+    .fa-pencil{
+      font-size: 11px;
+    }
+    .drop-down{
+      width:100%;
+      height:30px;
+      margin-top:5px;
+      padding-left:10px;
+      font-size:12px;
+      border: 0.5px solid #000;
+      border-radius: 4px;
+      background-color: white;
+      color: black;
+    }
+    .footer-container{
+    width:100%;
+    margin-top: 50px;
+    background-color: #ECECEC;
+    /*height: 70vh;*/
+  }
+  .footer-center{
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top:25px;
+  }
+  .footer-con{
+    width:100%;
+  }
+  .footer-header-text-con{
+    width:10%;
+  }
+  .footer-header-text{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Lexend;
+    color:#1400FF;
+  }
+  .table{
+    width:31%;
+    padding-top: 15px;
+  }
+  .hd-txt{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .hd-txtx{
+    font-size: 18px;
+    font-family: Lexend;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .tag-con{
+    padding-top: 5px;
+  }
+  .tag-type{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 300;
+    color:black;
+    display: block;
+    line-height: 22px;
+  }
+  .tag-typex{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    display: block;
+  }
+  .tag-typey{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    padding-top:15px;
+  }
+  .tag-typey-con{
+    padding-top: 15px;
+  }
+  .app-con{
+    padding-top: 20px;
+    width: 200px;
+    padding-bottom: 30px;
+  }
+  .app{
+    font-size: 15px;
+    font-family: Lexend;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .link-apple{
+    color: black;
+  }
+  .fa-android{
+    font-size: 19px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .fa-apple{
+    font-size: 19px;
+    display: inline-block;
+  }
+   a i:hover {
+     transition: all 0.3s linear;
+  }
+   .fa-android:hover{
+     color:#a8e86f;
+     cursor: pointer;
+     transition: all 0.3s linear;
+   }
+   .fa-apple:hover{
+     color: gray;
+     cursor: pointer;
+     transition: all 0.3s linear;
+   }
+    @media only screen and (min-width:600px) {
+      .head-top {
+        height: 55px;
+      }
+      .header-con {
+        padding-top: 1%;
+        padding-left: 15%;
+      }
+      .emp-pe-ds-center{
+        width:70%;
+      }
+      .profile-con{
+        padding-right: 16%;
+      }
+      .text-field{
+        display:inline-block;
+        margin-top:10px;
+        padding-top:0;
+      }
+      .drop-down-con{
+        display:inline-block;
+      }
+      .text-fd-center{
+        width: 48%;
+        margin-right: 1%;
+        display: inline-block;
+      }
+      .emp-dp-pic-con{
+        width:80px;
+        height: 80px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .emp-cy-name{
+        text-align: center;
+      }
+      .footer-container{
+        display: inline-block;
+      }
+      .footer-con{
+        height: 240px;
+      }
+      .footer-center {
+        width: 70%;
+      }
+      .table{
+        width:27%;
+        padding-top: 0px;
+        display: block;
+        height: 100px;
+        float: left;
+      }
+      .hd-txt{
+        font-size: 13px;
+      }
+      .tag-type{
+        font-size: 13px;
+      }
+      .tag-typex{
+        font-size: 13px;
+      }
+      .tag-typey{
+        font-size: 13px;
+      }
+      .tablex{
+        width: 20%;
+        display: block;
+        float: left;
+        height: 100px;
+        padding-top: 10px;
+      }
+      .tabley{
+        width:32%;
+        display: block;
+        float: left;
+        height: 140px;
+      }
+      .tablez{
+        width:21%;
+        display: block;
+        float: left;
+      }
+    }
+    @media only screen and (min-width:900px) {
+      .head-top {
+        height: 55px;
+      }
+      .header-con {
+        padding-top: 0.5%;
+      }
+      .head-text {
+        font-size: 35px;
+      }
+      .text-field{
+        display:inline-block;
+        padding-top:7px;
+      }
+      .drop-down-con{
+        display:inline-block;
+        padding-top:3%;
+      }
+      .emp-pe-ds-center{
+         width:60%;
+      }
+      .footer-con{
+        height: 160px;
+      }
+      .footer-header-text-con{
+        margin-right: 15%;
+        display: block;
+        float: left;
+      }
+      .table{
+        width:18%;
+      }
+      .hd-txt{
+        font-size: 14px;
+      }
+      .tag-type{
+        font-size: 14px;
+      }
+      .tag-typex{
+        font-size: 14px;
+      }
+      .tag-typey{
+        font-size: 14px;
+      }
+      .tablex{
+        width:15%;
+      }
+      .tabley{
+        width:22%;
+        margin-left: 0;
+      }
+      .tablez{
+        width: 20%;
+      }
+      .app-con{
+        padding-top:0;
+        padding-bottom: 40px;
+      }
+    }
+
+</style>
+<body>
+    <div class="head-top">
+      <div class="header-con">
+        <a class="header-text" href="website" style="text-decoration: none;">we.</a>
+        <div class="profile-con">
+          <a class="profile-name" href="website/employer-profiledetails" style="text-decoration: none;">
+            UUK Softwares
+          </a>
+          <div class="profile-icon">
+            <i class="material-icons">domain</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="emp-pe-ds-con">
+      <div class="emp-pe-ds-center">
+        <div class="center-align">
+          <div class="dropdown-total-con">
+            <div class="drop-down-icon">
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div class="emp-pe-ds-dropdown-con">
+              <div class="emp-pe-ds-dropdown">
+                <div class="emp-icon-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="emp-icon" width="27" height="24" viewBox="0 0 27 24" fill="none">
+                    <path d="M13.8214 5.5096V0.32666H0.993652V23.6499H26.6492V5.5096H13.8214ZM11.2559 21.0584H3.55921V18.467H11.2559V21.0584ZM11.2559 15.8755H3.55921V13.284H11.2559V15.8755ZM11.2559 10.6925H3.55921V8.10108H11.2559V10.6925ZM11.2559 5.5096H3.55921V2.91813H11.2559V5.5096ZM24.0837 21.0584H13.8214V8.10108H24.0837V21.0584ZM21.5181 10.6925H16.387V13.284H21.5181V10.6925ZM21.5181 15.8755H16.387V18.467H21.5181V15.8755Z" fill="black"/>
+                  </svg>
+                </div>
+                <a class="emp-atag" href="" style="text-decoration: none;">Employer</a>
+                <div class="dropdown-content">
+                  <div class="option-con">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="jobpost-icon" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3095 4.04229V2.41848H7.0619V4.04229H10.3095ZM2.19049 5.66609V14.597H15.1809V5.66609H2.19049ZM15.1809 4.04229C16.0821 4.04229 16.8047 4.76488 16.8047 5.66609V14.597C16.8047 15.4982 16.0821 16.2208 15.1809 16.2208H2.19049C1.28928 16.2208 0.566685 15.4982 0.566685 14.597L0.574804 5.66609C0.574804 4.76488 1.28928 4.04229 2.19049 4.04229H5.4381V2.41848C5.4381 1.51727 6.16069 0.794678 7.0619 0.794678H10.3095C11.2107 0.794678 11.9333 1.51727 11.9333 2.41848V4.04229H15.1809Z" fill="black"/>
+                    </svg>
+                    <a class="emp-atag" href="" style="text-decoration: none;">Job Post</a>
+                  </div>
+                  <div class="option-con">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="candidate-icon" width="26" height="17" viewBox="0 0 26 17" fill="none">
+                      <path d="M18.3182 9.71428C16.9 9.71428 14.69 10.1271 13 10.9286C11.31 10.115 9.1 9.71428 7.68182 9.71428C5.11727 9.71428 0 11.0257 0 13.6607V17H26V13.6607C26 11.0257 20.8827 9.71428 18.3182 9.71428ZM13.5909 15.1786H1.77273V13.6607C1.77273 13.005 4.79818 11.5357 7.68182 11.5357C10.5655 11.5357 13.5909 13.005 13.5909 13.6607V15.1786ZM24.2273 15.1786H15.3636V13.6607C15.3636 13.1021 15.1273 12.6164 14.7491 12.1793C15.7891 11.815 17.0655 11.5357 18.3182 11.5357C21.2018 11.5357 24.2273 13.005 24.2273 13.6607V15.1786ZM7.68182 8.5C9.96273 8.5 11.8182 6.59357 11.8182 4.25C11.8182 1.90643 9.96273 0 7.68182 0C5.40091 0 3.54545 1.90643 3.54545 4.25C3.54545 6.59357 5.40091 8.5 7.68182 8.5ZM7.68182 1.82143C8.98182 1.82143 10.0455 2.91429 10.0455 4.25C10.0455 5.58571 8.98182 6.67857 7.68182 6.67857C6.38182 6.67857 5.31818 5.58571 5.31818 4.25C5.31818 2.91429 6.38182 1.82143 7.68182 1.82143ZM18.3182 8.5C20.5991 8.5 22.4545 6.59357 22.4545 4.25C22.4545 1.90643 20.5991 0 18.3182 0C16.0373 0 14.1818 1.90643 14.1818 4.25C14.1818 6.59357 16.0373 8.5 18.3182 8.5ZM18.3182 1.82143C19.6182 1.82143 20.6818 2.91429 20.6818 4.25C20.6818 5.58571 19.6182 6.67857 18.3182 6.67857C17.0182 6.67857 15.9545 5.58571 15.9545 4.25C15.9545 2.91429 17.0182 1.82143 18.3182 1.82143Z" fill="black"/>
+                    </svg>
+                    <a class="emp-atag" href="website/employer-candidate-applied" style="text-decoration: none;">Candidate</a>
+                  </div>
+                  <div class="option-con">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="analytics-icon" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M16 0H2C0.89 0 0 0.9 0 2V16C0 17.1 0.89 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.11 0 16 0ZM16 16H2V4H16V16ZM14 9H4V7H14V9ZM10 13H4V11H10V13Z" fill="black"/>
+                    </svg>
+                    <a class="emp-atag" href="website/employer-analytics" style="text-decoration: none;">Analytics</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="emp-dp-pic-con">
+            <div class="emp-dp-pic"></div>
+          </div>
+        </div>
+        <div class="emp-cy-name">
+          UUK Softwares
+        </div>
+        <div class="text-fd-center">
+          <div class="text-field">
+            <div class="top-name">Company Name
+            </div>
+            <input class="input-text" type="text" placeholder="UUK Softwares">
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="text-field">
+            <div class="top-name">GST or Pan Number
+            </div>
+            <input class="input-text" type="text" placeholder="TXU35678168">
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="drop-down-con">
+            <div class="top-name">Industry Type</div>
+            <select name="we" class="drop-down">
+              <option>None</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="text-field">
+            <div class="top-name">ISO Register
+            </div>
+            <input class="input-text" type="text" placeholder="Yes">
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="text-field">
+            <div class="top-name">ISO Registered Number</div>
+            <input class="input-text" type="text" placeholder="ISO2009:156">
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="drop-down-con">
+            <div class="top-name">No of Employees</div>
+            <div class="edit-icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <select name="we" class="drop-down">
+              <option>None</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="drop-down-con">
+            <div class="top-name">Company Native</div>
+            <select name="we" class="drop-down">
+              <option>None</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="text-field">
+            <div class="top-name">Company Locations</div>
+            <div class="edit-icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <input class="input-text" type="text" placeholder="chennai,mumbai,banglore">
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="text-field">
+            <div class="top-name">Email ID</div>
+            <input class="input-text" type="text" placeholder="uuksoftwares@gmail.com">
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="text-field">
+            <div class="top-name">Telephone No</div>
+            <div class="edit-icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <input class="input-text" type="text" placeholder="+91 7693944587">
+          </div>
+        </div>
+        <div class="text-fd-center">
+          <div class="text-area-con">
+            <div class="top-name">Registered Address</div>
+            <textarea cols="5" rows="5" class="text-area" placeholder="No.8, Rajan Nagar, Kelambakkam, Chennai 603103"></textarea>
+          </div>
+
+        </div>
+        <div class="text-fd-center">
+          <div class="text-area-con">
+            <div class="top-name">Unit Address</div>
+            <div class="edit-icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <textarea cols="5" rows="5" class="text-area" placeholder="No.8, Rajan Nagar, Kelambakkam, Chennai 603103"></textarea>
+          </div>
+        </div>
+          <div class="text-area-con">
+            <div class="top-name">Company Breif</div>
+            <div class="edit-icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <textarea cols="10" rows="10" class="text-area" placeholder="Lorem ipsum dolor sit amet, consectetur
+             adipiscing elit. Sed euismod erat a tellus maximus, vel auctor arcu mattis. Pellentesque mi erat,
+              hendrerit vel sodales in, eleifend vitae quam. Vivamus at convallis urna. Aliquam porttitor, urna non
+               pharetra sodales, nisl ligula rhoncus tortor, quis eleifend sem augue eu diam. Curabitur nec
+               pellentesque nisl. Suspendisse eu sem vulputate, finibus sapien vel, posuere nunc.">
+            </textarea>
+          </div>
+          <div class="text-area-con">
+            <div class="top-name">Awards & Achievements</div>
+            <div class="edit-icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <textarea cols="10" rows="10" class="text-area" placeholder="Lorem ipsum dolor sit amet, consectetur
+             adipiscing elit. Sed euismod erat a tellus maximus, vel auctor arcu mattis. Pellentesque mi erat,
+              hendrerit vel sodales in, eleifend vitae quam. Vivamus at convallis urna. Aliquam porttitor, urna non
+               pharetra sodales, nisl ligula rhoncus tortor, quis eleifend sem augue eu diam. Curabitur nec
+               pellentesque nisl. Suspendisse eu sem vulputate, finibus sapien vel, posuere nunc.">
+            </textarea>
+          </div>
+        <a class="emp-smb-btn" href="" style="text-decoration: none;">Sumbit</a>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-center">
+        <div class="footer-con">
+          <div class="footer-header-text-con">
+            <a class="footer-header-text" href="website" style="text-decoration: none;">we.</a>
+          </div>
+          <div class="table">
+            <div class="hd-txtx">we</div>
+            <div class="tag-con">
+              <a class="tag-type" href="" style="text-decoration: none;">About / press</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Blog</a>
+            </div>
+          </div>
+          <div class="tablex">
+            <div class="tag-con">
+              <a class="tag-typex" href="" style="text-decoration: none;">Login</a>
+              <a class="tag-typex" href="" style="text-decoration: none;">Sign up</a>
+            </div>
+            <div class="tag-typey-con">
+              <a class="tag-typey" href="" style="text-decoration: none;">Employer</a>
+            </div>
+          </div>
+          <div class="tabley">
+            <div class="hd-txt">Information</div>
+            <div class="tag-con">
+              <a class="tag-type" href="" style="text-decoration: none;">My information</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Help / contact us</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Guidelines</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Terms of use</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Privacy / cookies</a>
+            </div>
+          </div>
+          <div class="tablez">
+            <div class="hd-txt">Work with us</div>
+            <div class="tag-con">
+              <a class="tag-type" href="" style="text-decoration: none;">Advertisers</a>
+              <a class="tag-type" href="" style="text-decoration: none;">Careers</a>
+            </div>
+          </div>
+        </div>
+        <div class="app-con">
+          <div class="app">Download the app</div>
+          <a class="link-android">
+            <i class="fa fa-android"></i>
+          </a>
+          <a class="link-apple" href="" style="text-decoration: none;">
+            <i class="fa fa-apple"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

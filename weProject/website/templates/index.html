@@ -1,0 +1,809 @@
+{% load static %}
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+  <title>We</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .head-con{
+    width: 100%;
+    height:40px;
+    box-shadow: 2px 2px gainsboro;
+  }
+  .header-center{
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+
+  }
+  .header-left{
+    width: 20%;
+    float: left;
+  }
+  .header-txt{
+    font-size: 29px;
+    font-family: Lexend;
+    color: #1400FF;
+    font-weight: 900;
+  }
+  .header-right{
+    width:80%;
+  }
+  .right-center{
+    float:right;
+    padding-top:10px;
+  }
+  .emp-tag{
+    font-size: 12px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    width:65px;
+    display: inline-block;
+  }
+  .bn-tag{
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: Lexend;
+    border-style: solid;
+    width: 65px;
+    text-align: center;
+    margin-left: 7px;
+    background-color: black;
+    color: white;
+    border-width: inherit;
+    height: 18px;
+  }
+  @media screen and (min-width: 600px) {
+    .head-con{
+      height: 50px;
+    }
+    .header-left{
+      padding-left: 5%;
+    }
+    .header-txt{
+      font-size: 35px;
+    }
+    .right-center{
+      padding-top: 15px;
+    }
+    .emp-tag {
+      font-size: 14px;
+      width:80px;
+    }
+    .bn-tag{
+      width:75px;
+      height: 23px;
+      padding-top: 3px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .head-con{
+      height:55px;
+    }
+    .header-txt{
+      font-size: 40px;
+      font-family: Lexend;
+      color: #1400FF;
+      font-weight: 900;
+    }
+    .right-center{
+      padding-top: 18px;
+    }
+    .emp-tag{
+      font-size:15px;
+      width:80px;
+    }
+    .bn-tag{
+      width:75px;
+      height: 23px;
+      padding-top: 3px;
+    }
+  }
+  .image-con{
+    height: 450px;
+    width:100%;
+    margin-top: 2px;
+  }
+  .bg-img{
+    height: 100%;
+    width:100%;
+    background-image: url("{% static 'images/bg.png' %}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  .bg-con{
+    height: 300px;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    bottom: 8%;
+    left: 7%;
+    right: 7%;
+  }
+  .bg-txt-con{
+    width:88%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 25px;
+  }
+  .bg-txt{
+    font-size: 35px;
+    font-family: Lexend;
+  }
+  .sl-con{
+    margin-top:5%;
+  }
+  .search{
+    font-family: 'Lexend';
+    width: 100%;
+    height: 35px;
+    font-size: 13px;
+    padding-left: 25px;
+    font-weight: 300;
+    color: #000;
+    margin-top:10px;
+  }
+  .search:focus{
+    outline: none;
+  }
+  .location{
+    font-family: 'Lexend';
+    width: 100%;
+    height: 35px;
+    font-size: 13px;
+    padding-left: 25px;
+    font-weight: 300;
+    color: #000;
+    margin-top:10px;
+  }
+  .location:focus{
+    outline: none;
+  }
+  .fa-search{
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 8px;
+    font-size: 14px;
+    color:#8e8b8b;
+  }
+  .material-icons{
+    padding-top: 18px;
+    position: absolute;
+    font-size: 18px;
+    padding-left: 5px;
+    color: gray;
+  }
+  .middle-con{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+  }
+  .textx{
+    font-size: 27px;
+    font-family: Lexend;
+    line-height: 10px;
+  }
+  .we-txt{
+    font-family: Lexend;
+    font-size: 40px;
+    color: #1400FF;
+    font-weight: bold;
+  }
+  .para-text-con{
+    width:100%;
+  }
+  .para-text{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 300;
+    padding-top: 15px;
+    display: inline-block;
+    width: 75%;
+  }
+  .arrow-con{
+    height: 55px;
+    width:30px;
+    display: inline-block;
+    margin-top: 15px;
+    float: right;
+  }
+  .arrow{
+    height: 100%;
+    width:100%;
+    background-image: url("{% static 'images/Arrow .png' %}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .middle-txt{
+    font-size: 23px;
+    font-family: Lexend;
+    font-weight: 300;
+    width:173px;
+    display: inline-block;
+  }
+  .middle-we{
+    font-size: 23px;
+    font-weight: 700;
+    font-family: Lexend;
+    display: inline-block;
+  }
+  .pt-con{
+    width: 100%;
+    height:200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .left-con{
+    width: 45%;
+    height: 100px;
+    float:left;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .text-a{
+    font-size: 14px;
+    font-family: Lexend;
+  }
+  .fa-comments-o{
+    font-size: 22px;
+  }
+  .text-f{
+    font-size: 14px;
+    font-family: Lexend;
+  }
+  .fa-briefcase{
+    font-size: 20px;
+  }
+  .fa-building-o{
+    font-size: 20px;
+  }
+  .text-c{
+    font-size: 14px;
+    font-family: Lexend;
+  }
+  .fa-rupee{
+    font-size: 22px;
+  }
+  .text-s{
+    font-size: 14px;
+    font-family: Lexend;
+  }
+  @media screen and (min-width: 600px) {
+    .image-con{
+      height: 440px;
+      margin-top:3px;
+    }
+    .bg-img{
+      background-image:url("{% static 'images/bg tab.png' %}") ;
+    }
+    .bg-con{
+      height: 290px;
+      width:90%;
+      left:5%;
+      right: 5%;
+    }
+    .bg-txt-con{
+      width:65%;
+    }
+    .bg-txt{
+      font-size:31px;
+    }
+    .fa-search{
+      position: absolute;
+      padding-top: 20px;
+      padding-left: 8px;
+      font-size: 14px;
+      color:#8e8b8b;
+    }
+    .middle-con{
+      padding-top: 5%;
+      width:60%;
+    }
+    .textx{
+      font-size: 29px;
+    }
+    .we-txt{
+      font-size: 45px;
+    }
+    .para-text{
+      font-size: 16px;
+    }
+    .pt-con{
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    .left-con{
+      width: 24%;
+    }
+    .text-a{
+      font-size: 10px;
+      font-family: Lexend;
+    }
+    .fa-comments-o{
+      font-size: 22px;
+    }
+    .text-f{
+      font-size: 10px;
+      font-family: Lexend;
+    }
+    .fa-briefcase{
+      font-size: 20px;
+    }
+    .fa-building-o{
+      font-size: 20px;
+    }
+    .text-c{
+      font-size: 10px;
+      font-family: Lexend;
+    }
+    .fa-rupee{
+      font-size: 22px;
+    }
+    .text-s{
+      font-size: 10px;
+    }
+
+  }
+  @media screen and (min-width: 900px) {
+    .image-con{
+      height: 440px;
+      margin-top: 3px;
+    }
+    .bg-img{
+      background-image: url("{% static 'images/bg desktop.png' %}");
+    }
+    .bg-con{
+      height: 260px;
+      width:80%;
+      bottom: 18%;
+      left: 10%;
+      right: 10%;
+    }
+    .bg-txt-con{
+      width:65%;
+      padding-top: 75px;
+    }
+    .bg-txt{
+      text-align: center;
+    }
+    .sl-con{
+      display: inline-block;
+      width: 100%;
+      margin-top:1%;
+    }
+    .search-con{
+      width:60%;
+      display: inline-block;
+    }
+    .location-con{
+      position:relative;
+      width: 39%;
+      display: inline-block;
+    }
+    .search{
+      width:100%;
+    }
+    .location{
+      width:100%;
+      margin-left: -7px;
+    }
+    .material-icons{
+      position: absolute;
+      padding-top: 18px;
+      font-size: 18px;
+      padding-left: 0;
+    }
+    .middle-con{
+      padding-top: 4%;
+      width:52%;
+      position: relative;
+    }
+    .textx{
+      font-size: 29px;
+    }
+    .we-txt{
+      font-size: 45px;
+    }
+    .para-text-con{
+      margin-left: 20%;
+      position: absolute;
+      top: 42px;
+    }
+    .para-text{
+      font-size: 17px;
+      padding-top: 0;
+    }
+    .arrow-con{
+      margin-top: 0;
+    }
+    .pt-con{
+      flex-wrap: nowrap;
+    }
+    .left-con{
+      width: 25%;;
+    }
+    .down-right{
+      width:;
+    }
+    .text-a{
+      font-size: 15px;
+    }
+    .text-f{
+      font-size: 15px;
+    }
+    .text-c{
+      font-size: 15px;
+    }
+    .text-s{
+      font-size: 15px;
+    }
+  }
+  .footer-container{
+    width:100%;
+    margin-top: 50px;
+    background-color: #ECECEC;
+    /*height: 70vh;*/
+  }
+  .footer-center{
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top:25px;
+  }
+  .footer-con{
+    width:100%;
+  }
+  .footer-header-text-con{
+    width:10%;
+  }
+  .footer-header-text{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Lexend;
+    color:#1400FF;
+  }
+  .table{
+    width:31%;
+    padding-top: 15px;
+  }
+  .hd-txt{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .hd-txtx{
+    font-size: 18px;
+    font-family: Lexend;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .tag-con{
+    padding-top: 5px;
+  }
+  .tag-type{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 300;
+    color:black;
+    display: block;
+    line-height: 22px;
+  }
+  .tag-typex{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    display: block;
+  }
+  .tag-typey{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    padding-top:15px;
+  }
+  .tag-typey-con{
+    padding-top: 15px;
+  }
+  .app-con{
+    padding-top: 20px;
+    width: 200px;
+    padding-bottom: 30px;
+  }
+  .app{
+    font-size: 15px;
+    font-family: Lexend;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .link-apple{
+    color: black;
+  }
+  .fa-android{
+    font-size: 19px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .fa-apple{
+    font-size: 19px;
+    display: inline-block;
+  }
+   a i:hover {
+     transition: all 0.3s linear;
+  }
+   .fa-android:hover{
+     color:#a8e86f;
+     cursor: pointer;
+     transition: all 0.3s linear;
+   }
+   .fa-apple:hover{
+     color: gray;
+     cursor: pointer;
+     transition: all 0.3s linear;
+   }
+  @media screen and (min-width: 600px) {
+    .footer-container{
+      display: inline-block;
+    }
+    .footer-center{
+      width:70%;
+    }
+    .footer-con{
+      height: 240px;
+    }
+    .table{
+      width:27%;
+      padding-top: 0px;
+      display: block;
+      height: 100px;
+      float: left;
+    }
+    .hd-txt{
+      font-size: 13px;
+    }
+    .tag-type{
+      font-size: 13px;
+    }
+    .tag-typex{
+      font-size: 13px;
+    }
+    .tag-typey{
+      font-size: 13px;
+    }
+    .tablex{
+      width: 20%;
+      display: block;
+      float: left;
+      height: 100px;
+      padding-top: 10px;
+    }
+    .tabley{
+      width:32%;
+      display: block;
+      float: left;
+      height: 140px;
+    }
+    .tablez{
+      width:21%;
+      display: block;
+      float: left;
+    }
+  }
+  @media screen and (min-width: 900px) {
+      .footer-con{
+        height: 160px;
+      }
+    .footer-header-text-con{
+      margin-right: 15%;
+      display: block;
+      float: left;
+    }
+    .table{
+      width:18%;
+    }
+    .hd-txt{
+      font-size: 14px;
+    }
+    .tag-type{
+      font-size: 14px;
+    }
+    .tag-typex{
+      font-size: 14px;
+    }
+    .tag-typey{
+      font-size: 14px;
+    }
+    .tablex{
+      width:15%;
+    }
+    .tabley{
+      width:22%;
+      margin-left: 0;
+    }
+    .tablez{
+      width: 20%;
+    }
+    .app-con{
+      padding-top:0;
+      padding-bottom: 40px;
+    }
+  }
+
+
+
+
+</style>
+<body>
+  <div class="head-con">
+  <div class="header-center">
+    <div class="header-left">
+      <a class="header-txt" href="website" style="text-decoration: none;">we.</a>
+    </div>
+    <div class="header-left header-right">
+      <div class="right-center">
+        <a class="emp-tag" href="website/employer-login"style="text-decoration: none;">Employer</a>
+          <a class="bn-tag" href="website/candidate-login"style="text-decoration: none;">Login</a>
+          <a class="bn-tag" href="website/candidate-signup"style="text-decoration: none;">sign up</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="image-con">
+  <div class="bg-img">
+    <div class="bg-con">
+      <div class="bg-txt-con">
+        <div class="bg-txt">Millions of Opportunity. Millions of Jobs. </div>
+        <div class="sl-con">
+          <div class="search-con">
+            <i class="fa fa-search"></i>
+            <input type="text" class="search" placeholder="Search by designation, category...">
+          </div>
+          <div class="location-con">
+            <i class="material-icons">place</i>
+            <input type="text" class="location" placeholder="location">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="middle-con">
+  <div class="textx">
+    Why
+  </div>
+  <div class="we-txt">
+    we.
+  </div>
+  <div class="para-text-con">
+    <div class="para-text">We're serving up trusted insights and anonymous conversation,
+      so you'll have the goods you need to succeed.
+    </div>
+    <div class="arrow-con">
+      <div class="arrow"></div>
+    </div>
+  </div>
+
+</div>
+<div class="middle-con">
+  <div class="middle-txt">
+    Get ahead with
+  </div>
+  <div class="middle-we">
+    we.
+  </div>
+  <div class="pt-con">
+    <div class="left-con">
+      <i class="fa fa-comments-o"></i>
+      <div class="text-a">
+        Join your work Community
+      </div>
+    </div>
+    <div class="left-con right-con">
+      <i class="fa fa-briefcase"></i>
+      <div class="text-f">Find and Apply to jobs</div>
+    </div>
+    <div class="left-con down-left">
+      <i class="fa fa-building-o"></i>
+      <div class="text-c">Search Company Reviews</div>
+    </div>
+    <div class="left-con down-right">
+      <i class="fa fa-rupee"></i>
+      <div class="text-s">Compare Salaries</div>
+    </div>
+  </div>
+</div>
+<div class="footer-container">
+  <div class="footer-center">
+    <div class="footer-con">
+      <div class="footer-header-text-con">
+        <a class="footer-header-text" href="website" style="text-decoration: none;">we.</a>
+      </div>
+      <div class="table">
+        <div class="hd-txtx">we</div>
+        <div class="tag-con">
+          <a class="tag-type" href="" style="text-decoration: none;">About / press</a>
+          <a class="tag-type" href="" style="text-decoration: none;">Blog</a>
+        </div>
+      </div>
+      <div class="tablex">
+        <div class="tag-con">
+          <a class="tag-typex" href="" style="text-decoration: none;">Login</a>
+          <a class="tag-typex" href="" style="text-decoration: none;">Sign up</a>
+        </div>
+        <div class="tag-typey-con">
+          <a class="tag-typey" href="" style="text-decoration: none;">Employer</a>
+        </div>
+      </div>
+      <div class="tabley">
+        <div class="hd-txt">Information</div>
+        <div class="tag-con">
+          <a class="tag-type" href="" style="text-decoration: none;">My information</a>
+          <a class="tag-type" href="" style="text-decoration: none;">Help / contact us</a>
+          <a class="tag-type" href="" style="text-decoration: none;">Guidelines</a>
+          <a class="tag-type" href="" style="text-decoration: none;">Terms of use</a>
+          <a class="tag-type" href="" style="text-decoration: none;">Privacy / cookies</a>
+        </div>
+      </div>
+      <div class="tablez">
+        <div class="hd-txt">Work with us</div>
+        <div class="tag-con">
+          <a class="tag-type" href="" style="text-decoration: none;">Advertisers</a>
+          <a class="tag-type" href="" style="text-decoration: none;">Careers</a>
+        </div>
+      </div>
+    </div>
+    <div class="app-con">
+      <div class="app">Download the app</div>
+      <a class="link-android">
+        <i class="fa fa-android"></i>
+      </a>
+      <a class="link-apple" href="" style="text-decoration: none;">
+        <i class="fa fa-apple"></i>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

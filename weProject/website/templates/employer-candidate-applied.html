@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>We</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      margin:0;
+      overflow-x: hidden;
+    }
+    .head-top{
+      width: 100%;
+      height:60px;
+      box-shadow: 2px 2px gainsboro;
+    }
+    .header-con{
+      width:100%;
+      padding-left: 5%;
+      padding-top: 3px;
+    }
+    .header-text{
+      font-size:35px;
+      font-family:Lexend;
+      color:#1400FF;
+      font-weight: 900;
+      display: inline-block;
+    }
+    .profile-con{
+      display: inline-block;
+      float:right;
+      padding-right: 5%;
+      padding-top: 2px;
+    }
+    .profile-name{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 400;
+      margin-right: 5px;
+      display: block;
+      float:left;
+      color:black;
+      padding-top: 15px;
+    }
+    .profile-icon{
+      width:25px;
+      height: 25px;
+      display: block;
+      float: left;
+      background-color: #D9D9D9;
+      margin-top: 10px;
+      border-radius: 15px;
+    }
+    .material-icons{
+      font-size: 15px;
+      padding:6px;
+    }
+    .emp-can-app-con{
+      width: 100%;
+      height: 650px;
+    }
+    .emp-can-app-center{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+    }
+    .dropdown-total-con{
+
+    }
+    .dropdown-icon-con{
+      width: 25px;
+      height: 25px;
+      background-color: #1400FF;
+      text-align: center;
+      float: left;
+    }
+    .dropdown-icon{
+      width: 12px;
+      height: 12px;
+      margin-top: 7px
+    }
+    .emp-jp-dropdown-con{
+       width: 90px;
+      height: 25px;
+      background-color: #D9D9D9;
+      float: left;
+      padding-top: 5px;
+    }
+    .dropdown-con{
+      display: inline-block;
+      position: relative;
+    }
+    .dropdown{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 400;
+      color: black;
+      text-decoration: none;
+      display: flex;
+      align-items: center
+    }
+    .jobpost-icon{
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    .f-dropdown-content{
+      margin-top: 7px;
+    }
+    .dropdown-content{
+      display: none;
+    }
+    .option-con{
+      width: 90px;
+      height: 25px;
+      border-top: 0.5 solid #000;
+      padding-top: 5px;
+      background-color: #EEEEEE;
+    }
+    .dropdown-con:hover .dropdown-content {
+      display: block;
+    }
+    .option-con:hover{
+      background-color: #D9D9D9;
+    }
+    .emp-icon{
+      height: 12px;
+      width: 12px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .analytics-icon{
+      width: 12px;
+      height: 12px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .candidate-icon{
+      width: 14px;
+      height: 13px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .table-container{
+      width: 100%;
+      float: left;
+      margin-top: 20px;
+    }
+    .table-header{
+      width: 100%;
+      height: 40px;
+      background-color: #1400FF;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .child-header-one{
+      width: 100px;
+    }
+    .child-header-two{
+      width: 100px;
+    }
+    .child-header-three{
+      width: 90px;
+    }
+    .child-header-four{
+      width: 17px;
+    }
+    .applied-date{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 600;
+      color: white;
+    }
+    .applicant-name{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 600;
+      color: white;
+    }
+    .designation{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 600;
+      color: white;
+    }
+    .resume-icon{
+      height: 14px;
+      width: 14px;
+    }
+    .child-table{
+      width: 100%;
+      padding: 10px;
+      background-color: #EEEEEE;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 2px;
+    }
+    .child-table:nth-child(2){
+      margin-top: 0;
+    }
+    .child-table-one{
+      width: 100px;
+    }
+    .child-table-two{
+      width: 100px;
+    }
+    .child-table-three{
+      width: 90px;
+    }
+    .child-table-four{
+      width: 17px;
+    }
+    .date{
+      font-size: 11px;
+      font-family: Lexend;
+      font-weight: 400;
+      color: #505050;
+    }
+    .name{
+      font-size: 11px;
+      font-family: Lexend;
+      font-weight: 400;
+      color: #505050;
+    }
+    .job-role{
+      font-size: 11px;
+      font-family: Lexend;
+      font-weight: 400;
+      color: #505050;
+    }
+    .download-icon{
+      width: 13px;
+      height: 13px;
+    }
+    .footer-container{
+      width:100%;
+      margin-top: 50px;
+      background-color: #ECECEC;
+      float: left;
+    }
+    .footer-center{
+      width:90%;
+      margin-left:auto;
+      margin-right: auto;
+      padding-top:25px;
+    }
+    .footer-con{
+      width:100%;
+    }
+    .footer-header-text-con{
+      width:10%;
+    }
+    .footer-header-text{
+      font-size: 40px;
+      font-weight: 900;
+      font-family: Lexend;
+      color:#1400FF;
+    }
+    .table{
+      width:31%;
+      padding-top: 15px;
+    }
+    .hd-txt{
+      font-size: 14px;
+      font-family: Lexend;
+      font-weight: 400;
+      padding-top: 10px;
+    }
+    .hd-txtx{
+      font-size: 18px;
+      font-family: Lexend;
+      font-weight: 400;
+      padding-top: 10px;
+    }
+    .tag-con{
+      padding-top: 5px;
+    }
+    .tag-type{
+      font-size: 14px;
+      font-family: Lexend;
+      font-weight: 300;
+      color:black;
+      display: block;
+      line-height: 22px;
+    }
+    .tag-typex{
+      font-size: 14px;
+      font-family: Lexend;
+      font-weight: 400;
+      color:black;
+      display: block;
+    }
+    .tag-typey{
+      font-size: 14px;
+      font-family: Lexend;
+      font-weight: 400;
+      color:black;
+      padding-top:15px;
+    }
+    .tag-typey-con{
+      padding-top: 15px;
+    }
+    .app-con{
+      padding-top: 20px;
+      width: 200px;
+      padding-bottom: 30px;
+    }
+    .app{
+      font-size: 15px;
+      font-family: Lexend;
+      font-weight: 300;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .link-apple{
+      color: black;
+    }
+    .fa-android{
+      font-size: 19px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .fa-apple{
+      font-size: 19px;
+      display: inline-block;
+    }
+     a i:hover {
+       transition: all 0.3s linear;
+    }
+     .fa-android:hover{
+       color:#a8e86f;
+       cursor: pointer;
+       transition: all 0.3s linear;
+     }
+     .fa-apple:hover{
+       color: gray;
+       cursor: pointer;
+       transition: all 0.3s linear;
+     }
+    @media only screen and (min-width:600px) {
+      .head-top {
+        height: 55px;
+      }
+      .header-con {
+        padding-top: 1%;
+      }
+      .child-header-one{
+        width: 120px;
+      }
+      .child-header-two{
+        width: 120px;
+      }
+      .child-header-three{
+        width: 120px;
+      }
+      .child-table-one{
+        width: 120px;
+      }
+      .child-table-two{
+        width: 120px;
+      }
+      .child-table-three{
+        width: 120px;
+      }
+      .applied-date{
+        font-size: 13px;
+      }
+      .applicant-name{
+        font-size: 13px;
+      }
+      .designation{
+        font-size: 13px;
+      }
+      .footer-container{
+        display: inline-block;
+      }
+      .footer-con{
+        height: 240px;
+      }
+      .table{
+        width:27%;
+        padding-top: 0px;
+        display: block;
+        height: 100px;
+        float: left;
+      }
+      .hd-txt{
+        font-size: 13px;
+      }
+      .tag-type{
+        font-size: 13px;
+      }
+      .tag-typex{
+        font-size: 13px;
+      }
+      .tag-typey{
+        font-size: 13px;
+      }
+      .tablex{
+        width: 20%;
+        display: block;
+        float: left;
+        height: 100px;
+        padding-top: 10px;
+      }
+      .tabley{
+        width:32%;
+        display: block;
+        float: left;
+        height: 140px;
+      }
+      .tablez{
+        width:21%;
+        display: block;
+        float: left;
+      }
+    }
+    @media only screen and (min-width:900px) {
+      .head-top {
+        height: 55px;
+      }
+      .header-con {
+        padding-top: 0.5%;
+        padding-left: 15%;
+      }
+      .profile-con{
+        padding-right: 16%;
+      }
+      .head-text {
+        font-size: 35px;
+      }
+      .emp-can-app-center{
+        width: 70%;
+      }
+      .child-header-one{
+        width: 150px;
+      }
+      .child-header-two{
+        width: 150px;
+      }
+      .child-header-three{
+        width: 150px;
+      }
+      .child-table-one{
+        width: 150px;
+      }
+      .child-table-two{
+        width: 150px;
+      }
+      .child-table-three{
+        width: 150px;
+      }
+      .footer-con{
+        height: 160px;
+      }
+      .footer-center {
+        width: 70%;
+      }
+      .footer-header-text-con{
+        margin-right: 15%;
+        display: block;
+        float: left;
+      }
+      .table{
+        width:18%;
+      }
+      .hd-txt{
+        font-size: 14px;
+      }
+      .tag-type{
+        font-size: 14px;
+      }
+      .tag-typex{
+        font-size: 14px;
+      }
+      .tag-typey{
+        font-size: 14px;
+      }
+      .tablex{
+        width:15%;
+      }
+      .tabley{
+        width:22%;
+        margin-left: 0;
+      }
+      .tablez{
+        width: 20%;
+      }
+      .app-con{
+        padding-top:0;
+        padding-bottom: 40px;
+      }
+    }
+</style>
+<body>
+  <div class="head-top">
+    <div class="header-con">
+      <a class="header-text" href="website" style="text-decoration: none;">we.</a>
+      <div class="profile-con">
+        <a class="profile-name" href="website/employer-profiledetails" style="text-decoration: none;">
+          UUK Softwares
+        </a>
+        <div class="profile-icon">
+          <i class="material-icons">domain</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="emp-can-app-con">
+    <div class="emp-can-app-center">
+      <div class="dropdown-total-con">
+          <div class="dropdown-icon-con">
+            <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon" width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1.1417 0L4.8583 3.7085L8.5749 0L9.7166 1.1417L4.8583 6L0 1.1417L1.1417 0Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="emp-jp-dropdown-con">
+            <div class="dropdown-con">
+              <a class="dropdown" href="website/employer-candidate-applied">
+                <svg xmlns="http://www.w3.org/2000/svg" class="candidate-icon" width="26" height="17" viewBox="0 0 26 17" fill="none">
+                  <path d="M18.3182 9.71428C16.9 9.71428 14.69 10.1271 13 10.9286C11.31 10.115 9.1 9.71428 7.68182 9.71428C5.11727 9.71428 0 11.0257 0 13.6607V17H26V13.6607C26 11.0257 20.8827 9.71428 18.3182 9.71428ZM13.5909 15.1786H1.77273V13.6607C1.77273 13.005 4.79818 11.5357 7.68182 11.5357C10.5655 11.5357 13.5909 13.005 13.5909 13.6607V15.1786ZM24.2273 15.1786H15.3636V13.6607C15.3636 13.1021 15.1273 12.6164 14.7491 12.1793C15.7891 11.815 17.0655 11.5357 18.3182 11.5357C21.2018 11.5357 24.2273 13.005 24.2273 13.6607V15.1786ZM7.68182 8.5C9.96273 8.5 11.8182 6.59357 11.8182 4.25C11.8182 1.90643 9.96273 0 7.68182 0C5.40091 0 3.54545 1.90643 3.54545 4.25C3.54545 6.59357 5.40091 8.5 7.68182 8.5ZM7.68182 1.82143C8.98182 1.82143 10.0455 2.91429 10.0455 4.25C10.0455 5.58571 8.98182 6.67857 7.68182 6.67857C6.38182 6.67857 5.31818 5.58571 5.31818 4.25C5.31818 2.91429 6.38182 1.82143 7.68182 1.82143ZM18.3182 8.5C20.5991 8.5 22.4545 6.59357 22.4545 4.25C22.4545 1.90643 20.5991 0 18.3182 0C16.0373 0 14.1818 1.90643 14.1818 4.25C14.1818 6.59357 16.0373 8.5 18.3182 8.5ZM18.3182 1.82143C19.6182 1.82143 20.6818 2.91429 20.6818 4.25C20.6818 5.58571 19.6182 6.67857 18.3182 6.67857C17.0182 6.67857 15.9545 5.58571 15.9545 4.25C15.9545 2.91429 17.0182 1.82143 18.3182 1.82143Z" fill="black"/>
+                </svg>
+                Candidate
+              </a>
+              <div class="f-dropdown-content">
+                <div class="dropdown-content">
+                  <div class="option-con">
+                    <a class="dropdown" href="">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="jobpost-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <g clip-path="url(#clip0_226_1367)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 3V2H5V3H7ZM2 4V9.5H10V4H2ZM10 3C10.555 3 11 3.445 11 4V9.5C11 10.055 10.555 10.5 10 10.5H2C1.445 10.5 1 10.055 1 9.5L1.005 4C1.005 3.445 1.445 3 2 3H4V2C4 1.445 4.445 1 5 1H7C7.555 1 8 1.445 8 2V3H10Z" fill="black"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_226_1367">
+                            <rect width="12" height="12" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Job post
+                    </a>
+                </div>
+              </div>
+              <div class="dropdown-content">
+                <div class="option-con">
+                  <a class="dropdown" href="website/employer-analytics">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="analytics-icon"width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M16 0H2C0.89 0 0 0.9 0 2V16C0 17.1 0.89 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.11 0 16 0ZM16 16H2V4H16V16ZM14 9H4V7H14V9ZM10 13H4V11H10V13Z" fill="black"/>
+                    </svg>
+                    Analytics
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown-content">
+                <div class="option-con">
+                  <a class="dropdown" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="emp-icon" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                      <path d="M5.5 2.22222V0H0V10H11V2.22222H5.5ZM4.4 8.88889H1.1V7.77778H4.4V8.88889ZM4.4 6.66667H1.1V5.55556H4.4V6.66667ZM4.4 4.44444H1.1V3.33333H4.4V4.44444ZM4.4 2.22222H1.1V1.11111H4.4V2.22222ZM9.9 8.88889H5.5V3.33333H9.9V8.88889ZM8.8 4.44444H6.6V5.55556H8.8V4.44444ZM8.8 6.66667H6.6V7.77778H8.8V6.66667Z" fill="black"/>
+                    </svg>
+                    Employer
+                  </a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      <div class="table-container">
+        <div class="table-header">
+          <div class="child-header-one">
+            <div class="applied-date">Applied Date</div>
+          </div>
+          <div class="child-header-two">
+            <div class="applicant-name">Applicants</div>
+          </div>
+          <div class="child-header-three">
+            <div class="designation">Designation</div>
+          </div>
+          <div class="child-header-four">
+            <svg xmlns="http://www.w3.org/2000/svg" class="resume-icon" width="8" height="10" viewBox="0 0 8 10" fill="none">
+              <path d="M4.625 0.75H0.925C0.41625 0.75 0.00462511 1.16625 0.00462511 1.675L0 9.075C0 9.58375 0.411625 10 0.920375 10H6.475C6.98375 10 7.4 9.58375 7.4 9.075V3.525L4.625 0.75ZM5.55 8.15H1.85V7.225H5.55V8.15ZM5.55 6.3H1.85V5.375H5.55V6.3ZM4.1625 3.9875V1.44375L6.70625 3.9875H4.1625Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">29.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">Mani Abraham S</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Graphic Designer</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">29.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">David Johnson</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Area Manager</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">27.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">Selavanandhan</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Sales Executive</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">27.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">Murugan Swamy</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Office Assistant</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">29.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">Muhammed Ali</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Technology Cheif</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">21.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">Rajesh Kumar</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Public Relations</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">29.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">Mani Abraham S</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Graphic Designer</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">29.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">Mani Abraham S</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Graphic Designer</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="child-table">
+          <div class="child-table-one">
+            <div class="date">29.8.2023</div>
+          </div>
+          <div class="child-table-two">
+            <div class="name">Mani Abraham S</div>
+          </div>
+          <div class="child-table-three">
+            <div class="job-role">Graphic Designer</div>
+          </div>
+          <div class="child-table-four">
+            <a class="download-icon-con" href="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" width="5" height="8" viewBox="0 0 5 8" fill="none">
+                <path d="M5 2.64706H3.57143V0H1.42857V2.64706H0L2.5 5.73529L5 2.64706ZM0 6.61765V7.5H5V6.61765H0Z" fill="#505050"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="footer-center">
+      <div class="footer-con">
+        <div class="footer-header-text-con">
+          <a class="footer-header-text" href="website" style="text-decoration: none;">we.</a>
+        </div>
+        <div class="table">
+          <div class="hd-txtx">we</div>
+          <div class="tag-con">
+            <a class="tag-type" href="" style="text-decoration: none;">About / press</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Blog</a>
+          </div>
+        </div>
+        <div class="tablex">
+          <div class="tag-con">
+            <a class="tag-typex" href="" style="text-decoration: none;">Login</a>
+            <a class="tag-typex" href="" style="text-decoration: none;">Sign up</a>
+          </div>
+          <div class="tag-typey-con">
+            <a class="tag-typey" href="" style="text-decoration: none;">Employer</a>
+          </div>
+        </div>
+        <div class="tabley">
+          <div class="hd-txt">Information</div>
+          <div class="tag-con">
+            <a class="tag-type" href="" style="text-decoration: none;">My information</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Help / contact us</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Guidelines</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Terms of use</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Privacy / cookies</a>
+          </div>
+        </div>
+        <div class="tablez">
+          <div class="hd-txt">Work with us</div>
+          <div class="tag-con">
+            <a class="tag-type" href="" style="text-decoration: none;">Advertisers</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Careers</a>
+          </div>
+        </div>
+      </div>
+      <div class="app-con">
+        <div class="app">Download the app</div>
+        <a class="link-android">
+          <i class="fa fa-android"></i>
+        </a>
+        <a class="link-apple" href="" style="text-decoration: none;">
+          <i class="fa fa-apple"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

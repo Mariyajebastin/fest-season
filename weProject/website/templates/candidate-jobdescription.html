@@ -1,0 +1,691 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>We</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .head-top{
+      width: 100%;
+      height:52px;
+      box-shadow: 2px 2px gainsboro;
+    }
+    .header-con{
+      width:100%;
+      padding-left: 5%;
+    }
+    .header-text{
+      font-size:30px;
+      font-family:Lexend;
+      color:#1400FF;
+      font-weight: 900;
+      display: inline-block;
+      padding-top: 5px;
+    }
+    .profile-con{
+      display: inline-block;
+      float:right;
+      padding-top: 15px;
+      padding-right: 12%;
+    }
+    .profile-name{
+      font-size: 16px;
+      font-family: Lexend;
+      font-weight: 400;
+      margin-right: 5px;
+      display: block;
+      float:left;
+      color:black;
+    }
+    .profile-icon{
+      width:40px;
+      height: 23px;
+      display: block;
+      float: left;
+    }
+    .material-icons{
+      font-size: 22px;
+    }
+    .job-dn-con{
+      width:100%;
+    }
+    .job-dn-center{
+      width:90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    }
+    .company-c-feed-con{
+      width:100%;
+      height: 90px;
+    }
+    .company-feed-con{
+      width:100%;
+      height: 75px;
+    }
+    .logo-con{
+      width:30px;
+      height: 30px;
+      border-radius: 20px;
+      display: block;
+      float: left;
+      margin-right: 10px;
+    }
+    .logo{
+      height: 100%;
+      width:100%;
+      background-image: url("{% static 'images/capgemini logo.png' %}");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    .name-text{
+      font-size: 15px;
+      font-family: Lexend;
+      font-weight: 500;
+    }
+    .dev-content{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 300;
+      margin-left:40px;
+      margin-top:5px;
+    }
+    .apply-button{
+      text-align: center;
+      font-size: 13px;
+      font-family: Lexend;
+      height: 30px;
+      width: 88px;
+      background-color: black;
+      color: white;
+      border-style: solid;
+      border-width: 0px;
+      padding-top: 5px;
+      display: block;
+      margin-left:40px;
+    }
+    .apply-button:active{
+      background-color: #1400FF;
+    }
+    .para-con{
+      width:82%;
+      margin-left: 40px;
+      margin-top: 30px;
+    }
+    .topic{
+      font-size: 13px;
+      font-family: Lexend;
+      font-weight: 500;
+      padding-bottom: 15px;
+    }
+    .para{
+      font-size: 11px;
+      font-family: Lexend;
+      font-weight: 300;
+      line-height: 16px;
+    }
+    .point-para{
+      display: list-item;
+      font-size: 11px;
+      font-family: Lexend;
+      font-weight: 300;
+      margin-top: 8px;
+      margin-left:15px;
+    }
+    .down-con{
+      width:100%;
+      height: 270px;
+      background-color: #EEE;
+      margin-top:25px;
+    }
+    .down-center{
+      width:50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top:30px;
+    }
+    .com-name{
+      font-size: 13px;
+      font-family: Lexend;
+      font-weight: 500;
+    }
+    .com-details{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 300;
+      margin-top:20px;
+    }
+    .web-tag{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 300;
+      color: black;
+      display: block;
+      margin-top: 25px;
+    }
+    .similar-con{
+      width:100%;
+      margin-top:20px;
+    }
+    .similar-center{
+      width:100%;
+      margin-left:25%;
+    }
+    .similar-txt{
+      font-size: 14px;
+      font-family: Lexend;
+      font-weight: 300;
+      width:65%;
+      display: inline-block;
+    }
+    .fa-sort{
+      rotate: 90deg;
+      font-size: 20px;
+    }
+    .box-con-center{
+      display:block;
+      width:1700px;
+      height: 150px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    .box-con{
+      width: 250px;
+      height: 105px;
+      border-style: solid;
+      border-width: 0.5px;
+      margin-right: 20px;
+      display: block;
+      float: left;
+      margin-top: 30px;
+    }
+    .c-name{
+      font-size: 13px;
+      font-family: Lexend;
+      font-weight: 400;
+      margin-left:10px;
+      margin-top:10px;
+    }
+    .dev-detail{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 300;
+      margin-left:10px;
+      margin-top:5px;
+    }
+    .salary-detail{
+      font-size: 12px;
+      font-family: Lexend;
+      font-weight: 300;
+      margin-left:10px;
+    }
+    .footer-container{
+    width:100%;
+    margin-top: 50px;
+    background-color: #ECECEC;
+    /*height: 70vh;*/
+  }
+  .footer-center{
+    width:90%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-top:25px;
+  }
+  .footer-con{
+    width:100%;
+  }
+  .footer-header-text-con{
+    width:10%;
+  }
+  .footer-header-text{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Lexend;
+    color:#1400FF;
+  }
+  .table{
+    width:31%;
+    padding-top: 15px;
+  }
+  .hd-txt{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .hd-txtx{
+    font-size: 18px;
+    font-family: Lexend;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  .tag-con{
+    padding-top: 5px;
+  }
+  .tag-type{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 300;
+    color:black;
+    display: block;
+    line-height: 22px;
+  }
+  .tag-typex{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    display: block;
+  }
+  .tag-typey{
+    font-size: 14px;
+    font-family: Lexend;
+    font-weight: 400;
+    color:black;
+    padding-top:15px;
+  }
+  .tag-typey-con{
+    padding-top: 15px;
+  }
+  .app-con{
+    padding-top: 20px;
+    width: 200px;
+    padding-bottom: 30px;
+  }
+  .app{
+    font-size: 15px;
+    font-family: Lexend;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .link-apple{
+    color: black;
+  }
+  .fa-android{
+    font-size: 19px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .fa-apple{
+    font-size: 19px;
+    display: inline-block;
+  }
+   a i:hover {
+     transition: all 0.3s linear;
+  }
+   .fa-android:hover{
+     color:#a8e86f;
+     cursor: pointer;
+     transition: all 0.3s linear;
+   }
+   .fa-apple:hover{
+     color: gray;
+     cursor: pointer;
+     transition: all 0.3s linear;
+   }
+    @media only screen and (min-width:600px) {
+      .head-top {
+        height: 55px;
+      }
+      .header-con {
+        padding-top: 1%;
+        padding-left: 15%;
+      }
+      .profile-con{
+        padding-right: 16%;
+      }
+      .job-dn-center{
+        width: 70%;
+      }
+      .footer-container{
+        display: inline-block;
+      }
+      .footer-con{
+        height: 240px;
+      }
+      .footer-center {
+        width: 70%;
+      }
+      .table{
+        width:27%;
+        padding-top: 0px;
+        display: block;
+        height: 100px;
+        float: left;
+      }
+      .hd-txt{
+        font-size: 13px;
+      }
+      .tag-type{
+        font-size: 13px;
+      }
+      .tag-typex{
+        font-size: 13px;
+      }
+      .tag-typey{
+        font-size: 13px;
+      }
+      .tablex{
+        width: 20%;
+        display: block;
+        float: left;
+        height: 100px;
+        padding-top: 10px;
+      }
+      .tabley{
+        width:32%;
+        display: block;
+        float: left;
+        height: 140px;
+      }
+      .tablez{
+        width:21%;
+        display: block;
+        float: left;
+      }
+    }
+    @media only screen and (min-width:900px) {
+      .head-top {
+        height: 55px;
+      }
+      .header-con {
+        padding-top: 0.5%;
+      }
+      .head-text {
+        font-size: 35px;
+      }
+      .footer-con{
+        height: 160px;
+      }
+      .footer-header-text-con{
+        margin-right: 15%;
+        display: block;
+        float: left;
+      }
+      .table{
+        width:18%;
+      }
+      .hd-txt{
+        font-size: 14px;
+      }
+      .tag-type{
+        font-size: 14px;
+      }
+      .tag-typex{
+        font-size: 14px;
+      }
+      .tag-typey{
+        font-size: 14px;
+      }
+      .tablex{
+        width:15%;
+      }
+      .tabley{
+        width:22%;
+        margin-left: 0;
+      }
+      .tablez{
+        width: 20%;
+      }
+      .app-con{
+        padding-top:0;
+        padding-bottom: 40px;
+      }
+    }
+
+</style>
+<body>
+    <div class="head-top">
+      <div class="header-con">
+        <a class="header-text" href="" style="text-decoration: none;">we.</a>
+        <div class="profile-con">
+          <a class="profile-name" href="" style="text-decoration: none;">
+            Tom
+          </a>
+          <div class="profile-icon">
+            <i class="material-icons">account_circle</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="job-dn-con">
+      <div class="job-dn-center">
+        <div class="company-c-feed-con">
+          <div class="logo-con">
+            <div class="logo"></div>
+          </div>
+          <div class="name-text">Front End Web Developer
+          </div>
+          <div class="dev-content">Capgemnini Technology Services India Limited , OMR</div>
+        </div>
+        <a class="apply-button" href="" style="text-decoration: none;">Apply</a>
+        <div class="para-con">
+          <div class="topic">Job brief</div>
+          <div class="para">
+            We are looking for a Software Developer to build and implement functional programs.
+            You will work with other
+            Developers and Product Managers throughout the software development
+            life cycle.
+          </div>
+          <div class="para">
+            In this role, you should be a team player with a keen eye for detail and problem-solving skills. If you also
+            have experience in Agile frameworks and popular coding languages (e.g. JavaScript), we’d like to meet you.
+            Your goal will be to build efficient programs and systems that serve user needs.
+          </div>
+        </div>
+        <div class="para-con">
+          <div class="topic">Responsibilities</div>
+          <div class="point-para">
+            Work with developers to design algorithms and flowcharts
+          </div>
+          <div class="point-para">
+            Produce clean, efficient code based on specifications
+          </div>
+          <div class="point-para">
+            Integrate software components and third-party programs
+          </div>
+          <div class="point-para">
+            Verify and deploy programs and systems
+          </div>
+          <div class="point-para">
+            Troubleshoot, debug and upgrade existing software
+          </div>
+          <div class="point-para">
+            Gather and evaluate user feedback
+          </div>
+          <div class="point-para">
+            Recommend and execute improvements
+          </div>
+          <div class="point-para">
+            Create technical documentation for reference and reporting
+          </div>
+        </div>
+        <div class="para-con">
+          <div class="topic">
+            Requirements and skills
+          </div>
+          <div class="point-para">
+            Proven experience as a Software Developer,Software Engineer or similar role
+          </div>
+          <div class="point-para">
+            Familiarity with Agile development methodologies
+          </div>
+          <div class="point-para">
+            Experience with software design and development in a test-driven environment
+          </div>
+          <div class="point-para">
+            Knowledge of coding languages (e.g. C++, Jave, JavaScript) and frameworks/systems(e.g. AngularJS,Git)
+          </div>
+          <div class="point-para">
+            Experience with databases and Object-Relational Mapping (ORM)frameworks (e.g. Hibernate)
+          </div>
+          <div class="point-para">
+            Ability to learn new languages and technologies
+          </div>
+          <div class="point-para">
+            Excellent communication skills
+          </div>
+          <div class="point-para">
+            Resourcefulness and troubleshooting aptitude Attention to detail
+          </div>
+          <div class="point-para">
+            B.sc/BA in Computer Science, Engineering or a related field
+          </div>
+        </div>
+      </div>
+      <div class="down-con">
+        <div class="down-center">
+          <div class="com-name">
+            Capgemini Technology Services India Limited, OMR
+          </div>
+          <div class="com-details">
+            Capgemini was founded by Serge Kampf in 1967[4] as an enterprise management and data processing company.
+            The company was founded as the Société pour la Gestion de l'Entreprise et le Traitement de l'Information
+            (Sogeti).[5]
+          </div>
+          <a class="web-tag" href="" style="text-decoration: none;">www.cape.com</a>
+        </div>
+      </div>
+      <div class="similar-con">
+        <div class="similar-center">
+          <div class="similar-txt">Similar Jobs</div>
+          <i class="fa fa-sort"></i>
+        </div>
+        <div class="box-con-center">
+          <div class="box-con">
+            <div class="c-name">Capgemnini Technology
+              Services India Limited
+              , OMR</div>
+            <div class="dev-detail">
+              Front End Web Developer
+            </div>
+            <div class="salary-detail">$7L - $20L</div>
+          </div>
+          <div class="box-con">
+            <div class="c-name">Capgemnini Technology
+              Services India Limited
+              , OMR</div>
+            <div class="dev-detail">
+              Front End Web Developer
+            </div>
+            <div class="salary-detail">$7L - $20L</div>
+          </div>
+          <div class="box-con">
+            <div class="c-name">Capgemnini Technology
+              Services India Limited
+              , OMR</div>
+            <div class="dev-detail">
+              Front End Web Developer
+            </div>
+            <div class="salary-detail">$7L - $20L</div>
+          </div>
+          <div class="box-con">
+            <div class="c-name">Capgemnini Technology
+              Services India Limited
+              , OMR</div>
+            <div class="dev-detail">
+              Front End Web Developer
+            </div>
+            <div class="salary-detail">$7L - $20L</div>
+          </div>
+          <div class="box-con">
+            <div class="c-name">Capgemnini Technology
+              Services India Limited
+              , OMR</div>
+            <div class="dev-detail">
+              Front End Web Developer
+            </div>
+            <div class="salary-detail">$7L - $20L</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+    <div class="footer-center">
+      <div class="footer-con">
+        <div class="footer-header-text-con">
+          <a class="footer-header-text" href="" style="text-decoration: none;">we.</a>
+        </div>
+        <div class="table">
+          <div class="hd-txtx">we</div>
+          <div class="tag-con">
+            <a class="tag-type" href="" style="text-decoration: none;">About / press</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Blog</a>
+          </div>
+        </div>
+        <div class="tablex">
+          <div class="tag-con">
+            <a class="tag-typex" href="" style="text-decoration: none;">Login</a>
+            <a class="tag-typex" href="" style="text-decoration: none;">Sign up</a>
+          </div>
+          <div class="tag-typey-con">
+            <a class="tag-typey" href="" style="text-decoration: none;">Employer</a>
+          </div>
+        </div>
+        <div class="tabley">
+          <div class="hd-txt">Information</div>
+          <div class="tag-con">
+            <a class="tag-type" href="" style="text-decoration: none;">My information</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Help / contact us</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Guidelines</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Terms of use</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Privacy / cookies</a>
+          </div>
+        </div>
+        <div class="tablez">
+          <div class="hd-txt">Work with us</div>
+          <div class="tag-con">
+            <a class="tag-type" href="" style="text-decoration: none;">Advertisers</a>
+            <a class="tag-type" href="" style="text-decoration: none;">Careers</a>
+          </div>
+        </div>
+      </div>
+      <div class="app-con">
+        <div class="app">Download the app</div>
+        <a class="link-android">
+          <i class="fa fa-android"></i>
+        </a>
+        <a class="link-apple" href="" style="text-decoration: none;">
+          <i class="fa fa-apple"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
